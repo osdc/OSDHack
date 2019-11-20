@@ -1,2 +1,2 @@
 # OSDHack
-Website for OSDCHack 1.0
+Website for OSDHack'19
