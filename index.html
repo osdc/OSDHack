@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,7 +31,53 @@
 			  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 			  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 			<![endif]-->
+	<style>
+		.card {
+			margin-top: 4rem;
+			text-align: center;
+			width: 33%;
+
+		}
+
+		.card:nth-child(1) {
+			float: left;
+		}
+
+		.card:nth-child(2) {
+			float: right;
+		}
+
+		.card-header {
+			margin-top: 1.5rem;
+			font-size: 1.5rem;
+			font-weight: 900;
+		}
+
+		.card-header h2 {
+			font-size: 1.5em;
+		}
+
+		.role p {
+			color: #6c715d;
+		}
+
+		.card-author {
+			width: 210px;
+			height: 210px;
+			overflow: hidden;
+			border-radius: 50%;
+			border: 5px solid #dd0a37;
+			margin: 0 auto;
+		}
+
+		img {
+			height: 100%;
+			width: auto;
+		}
+
+	</style>
 </head>
+
 <body>
 
 	<!-- Header -->
@@ -50,8 +97,8 @@
 
 				<!-- Mobile toggle -->
 				<button class="navbar-toggle">
-						<i class="fa fa-bars"></i>
-					</button>
+					<i class="fa fa-bars"></i>
+				</button>
 				<!-- /Mobile toggle -->
 			</div>
 			<!-- /navbar header -->
@@ -75,7 +122,8 @@
 	<!-- Home -->
 	<div id="home">
 		<!-- background image -->
-		<div class="section-bg" style="background-image:url(./img/background01.jpg)" data-stellar-background-ratio="0.5"></div>
+		<div class="section-bg" style="background-image:url(./img/background01.jpg)"
+			data-stellar-background-ratio="0.5"></div>
 		<!-- /background image -->
 
 		<!-- home wrapper -->
@@ -88,9 +136,15 @@
 					<div class="col-md-8 col-md-offset-2">
 						<div class="home-content">
 							<h1>OSDHack'21</h1>
-							<h4 class="lead">A Hackathon on Sustainable Computing based on Sustainable Development Goals</h4>
-							<h5 class="lead">Saturday, November 23, 2019 | 1:00pm - 9:00pm</h5>
-							<a href="https://docs.google.com/forms/d/e/1FAIpQLSf4ZXf1gCXfv6vRrVPsRL2SIwTK0HFR_kl8zbM-svaqvTQlMA/viewform?usp=sf_link" target="_blank"  class="main-btn">Registration</a>
+							<!-- <h4 class="lead">OSDHack 2022 is a nationwide open hackathon
+								being organised by the Open Source Developers
+								Community of JIIT, Noida. It is a 48-hour long
+								congregation of like-minded hackers and techenthusiasts
+								where participants will brainstorm and
+								build on their idea.</h4> -->
+							<h5 class="lead">20th-23rd January, 2021</h5>
+							<a href="https://docs.google.com/forms/d/e/1FAIpQLSf4ZXf1gCXfv6vRrVPsRL2SIwTK0HFR_kl8zbM-svaqvTQlMA/viewform?usp=sf_link"
+								target="_blank" class="main-btn">Registration</a>
 						</div>
 					</div>
 					<!-- /home content -->
@@ -118,59 +172,61 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<!-- about content -->
 					<div class="about-content">
-						<p>OSDHack 2019 is the Open Hackathon powered by the Open Source Developers Community (OSDC) based in and around JIIT, Noida. It is the 8-hour long hackathon where the participants will hack on various real-world problems being faced by the present world.</p>
+						<p>OSDHack 2022 is a nationwide open hackathon being organised by the Open Source Developers
+							Community of JIIT, Noida. It is a 48-hour long congregation of like-minded hackers and
+							techenthusiasts where participants will brainstorm and build on their idea.
+						</p>
 
-						<p>It is open to all tracks be it Machine Learning, Web Development, Android Development, AR/VR, Blockchain, Internet of Things etc. There is no boundation on the usage of technology.</p>
+
 					</div>
 					<!-- /about content -->
-
 					<!-- Numbers -->
 					<div id="numbers">
 						<!-- row -->
 						<div class="row">
 							<!-- number -->
-							<div class="col-md-4 col-sm-4 col-xs-6">
-								<div class="number">
-									<h3><span class="counter" data-from="0" data-to="7" data-speed="1000">0</span></h3>
+							<!-- <div class="col-md-4 col-sm-4 col-xs-6">
+								<div class="number"> 
+									<h3>48</span></h3>
 									<p>Hours</p>
 								</div>
-							</div>
+							</div> -->
 							<!-- /number -->
 
 							<!-- number -->
-							<div class="col-md-4 col-sm-4 col-xs-6">
+							<!-- <div class="col-md-4 col-sm-4 col-xs-6">
 								<div class="number">
 									<h3><span class="counter" data-from="0" data-to="15" data-speed="1000">0</span>+</h3>
 									<p>Problem Statements</p>
-								</div>
-							</div>
-							<!-- /number -->
+								</div> -->
+						</div>
+						<!-- /number -->
 
-							<!-- number -->
-							<div class="col-md-4 col-sm-4 col-xs-6">
+						<!-- number -->
+						<!-- <div class="col-md-4 col-sm-4 col-xs-6">
 								<div class="number">
 									<h3><span class="counter" data-from="0" data-to="9000" data-speed="1000">0</span>+</h3>
 									<p>Lines of Code</p>
 								</div>
-							</div>
-							<!-- /number -->
+							</div> -->
+						<!-- /number -->
 
-							<!-- number -->
-							<!-- <div class="col-md-3 col-sm-3 col-xs-6">
+						<!-- number -->
+						<!-- <div class="col-md-3 col-sm-3 col-xs-6">
 								<div class="number">
 									<h3><span class="counter" data-from="0" data-to="4000" data-speed="1000">0</span></h3>
 									<p>Worth Prizes</p>
 								</div>
 							</div>  -->
-						</div>
-						<!-- /row -->
 					</div>
-					<!-- /Numbers -->
+					<!-- /row -->
 				</div>
+				<!-- /Numbers -->
 			</div>
-			<!-- row -->
 		</div>
-		<!-- /container -->
+		<!-- row -->
+	</div>
+	<!-- /container -->
 	</div>
 	<!-- /About -->
 
@@ -184,19 +240,20 @@
 				<div id="galery-owl" class="owl-carousel owl-theme">
 					<!-- galery item -->
 					<div class="galery-item">
-						<img src="./img/osdc_hack_1.jpg" alt="">
+						<img src="/img/osdc_hack_2.jpeg" alt="" height="500px">
 					</div>
 					<!-- /galery item -->
 
 					<!-- galery item -->
 					<div class="galery-item">
-						<img src="./img/osdc_hack_2.jpg" alt="">
+						<img src="/img/osdc_hack_3.jpeg" alt="" height="500px">
 					</div>
 					<!-- /galery item -->
 
 					<!-- galery item -->
 					<div class="galery-item">
-						<img src="./img/osdc_hack_3.jpg" alt="">
+						<img src="/img/osdc_hack_1.jpeg" alt="" height="500px">
+
 					</div>
 					<!-- /galery item -->
 
@@ -208,8 +265,89 @@
 		<!-- /container -->
 	</div>
 	<!-- /Galery -->
+	<!-- Speakers -->
+	<div id="contact" class="section">
+		<!-- container -->
+		<div class="container">
+			<!-- row -->
+			<div class="row">
+				<!-- section title -->
+				<div class="section-title">
+					<h3 class="title"><span>Guest</span> <span style="color: #dd0a37;">Speakers</span></h3>
+				</div>
+				<!-- /section title -->
 
-	
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<div class="speaker-img" style="height: 200px; overflow: hidden;"><img
+								style="border:solid 4px #dd0a37;border-radius: 50%;" src="img/speaker1.jpeg" alt="">
+						</div>
+						<a href="https://www.linkedin.com/in/ryzokuken/" target="_blank">
+							<h3>Ujjwal Sharma</h3>
+						</a>
+						<h4>Compilers Hacker at Igalia</h4>
+					</div>
+				</div> <!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<div class="speaker-img" style="height: 200px; overflow: hidden;"><img
+								style="border:solid 4px #dd0a37;border-radius: 50%;" src="img/speaker2.jpeg" alt="">
+						</div>
+						<a href="https://www.linkedin.com/in/vaidik/?originalSubdomain=in" target="_blank">
+							<h3>Vaidik Kapoor</h3>
+						</a>
+						<h4>VP Engineering, Grofers</h4>
+					</div>
+				</div> <!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<div class="speaker-img" style="height: 200px; overflow: hidden;"><img
+								style="border:solid 4px #dd0a37;border-radius: 50%;" src="img/speaker3.jpeg" alt="">
+						</div>
+						<a href="https://www.linkedin.com/in/atrisharma/?originalSubdomain=in" target="_blank">
+							<h3>Atri Sharma</h3>
+						</a>
+						<h4>Distinguished Engineer at Securonix</h4>
+					</div>
+				</div>
+				<!--Centering the remaining two divs-->
+				<div class="col-sm-2">
+                <!--for begining-->
+				</div>
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<div class="speaker-img" style="height: 200px; overflow: hidden;"><img
+								style="border:solid 4px #dd0a37;border-radius: 50%;" src="img/speaker1.jpeg" alt="">
+						</div>
+						<a href="https://www.linkedin.com/in/ryzokuken/" target="_blank">
+							<h3>Ujjwal Sharma</h3>
+						</a>
+						<h4>Nodejs Collaborator,Pero</h4>
+					</div>
+				</div>
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<div class="speaker-img" style="height: 200px; overflow: hidden;"><img
+								style="border:solid 4px #dd0a37;border-radius: 50%;" src="img/speaker1.jpeg" alt="">
+						</div>
+						<a href="https://www.linkedin.com/in/ryzokuken/" target="_blank">
+							<h3>Ujjwal Sharma</h3>
+						</a>
+						<h4>Nodejs Collaborator,Pero</h4>
+					</div>
+				</div>
+				<div class="col-sm-2">
+                 <!--For end-->
+				</div>
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+
+	</div>
 	<!-- Event Schedule -->
 	<div id="schedule" class="section">
 		<!-- container -->
@@ -229,13 +367,13 @@
 						<div class="event">
 							<div class="event-day">
 								<div>
-									<span class="day">23</span>
-									<span class="year">Nov, 2019</span>
+									<span class="day">20</span>
+									<span class="year">Jan, 2022</span>
 								</div>
 							</div>
 							<div class="event-content">
-								<p class="event-time"><i class="fa fa-clock-o"></i> 01 : 00 PM - 01 : 30 PM</p>
-								<h3 class="event-title">Settling down & Rules Explanation</h3>
+								<p class="event-time"><i class="fa fa-clock-o"></i> 12:30 PM - 01:30 PM</p>
+								<h3 class="event-title">Settling down & Rules Explanation (to be decided)</h3>
 							</div>
 						</div>
 						<!-- /event -->
@@ -244,13 +382,97 @@
 						<div class="event">
 							<div class="event-hour"></div>
 							<div class="event-content"><br><br>
-								<p class="event-time"><i class="fa fa-clock-o"></i> 1 : 30 PM</p>
-								<h3 class="my-5 event-title">Hacking Begins.</h3>
+								<p class="event-time"><i class="fa fa-clock-o"></i> 02:30 PM - 03:30 PM</p>
+								<h3 class="my-5 event-title">Speaker Sessions</h3>
 							</div>
 						</div>
 						<!-- /event -->
 
 						<!-- event -->
+						<div class="event">
+							<div class="event-hour"></div>
+							<div class="event-content"><br><br>
+								<p class="event-time"><i class="fa fa-clock-o"></i> 04:30 PM - 05:30 PM</p>
+								<h3 class="my-5 event-title">Speaker Sessions</h3>
+							</div>
+						</div>
+
+						<div class="events-wrapper">
+							<!-- event -->
+							<div class="event">
+								<div class="event-day">
+									<div>
+										<span class="day">21</span>
+										<span class="year">Jan, 2022</span>
+									</div>
+								</div>
+
+								<div class="event-content">
+									<p class="event-time"><i class="fa fa-clock-o"></i> 12:00 AM</p>
+									<h3 class="event-title">Registrations Close</h3>
+								</div>
+
+								<div class="event-content">
+									<p class="event-time"><i class="fa fa-clock-o"></i> 12:00 PM - 01:00 PM</p>
+									<h3 class="event-title">Speaker Sessions</h3>
+								</div>
+							</div>
+							<!-- /event -->
+
+							<!-- event -->
+							<div class="event">
+								<div class="event-hour"></div>
+								<div class="event-content"><br><br>
+									<p class="event-time"><i class="fa fa-clock-o"></i> 05:00 PM</p>
+									<h3 class="my-5 event-title">Hacking Begins!!!</h3>
+								</div>
+							</div>
+							<!-- /event -->
+
+							<!-- event -->
+							<div class="event">
+								<div class="event-hour"></div>
+								<div class="event-content"><br><br>
+									<p class="event-time"><i class="fa fa-clock-o"></i> 04:30 PM - 05:30 PM</p>
+									<h3 class="my-5 event-title">Speaker Sessions</h3>
+								</div>
+							</div>
+
+							<div class="events-wrapper">
+								<!-- event -->
+								<div class="event">
+									<div class="event-day">
+										<div>
+											<span class="day">22</span>
+											<span class="year">Jan, 2022</span>
+										</div>
+									</div>
+
+									<div class="event-content">
+										<p class="event-time"><i class="fa fa-clock-o"></i> 12:00 PM - 05:00 PM</p>
+										<h3 class="event-title">Mid Reviews</h3>
+									</div>
+
+									<div class="event-content">
+										<p class="event-time"><i class="fa fa-clock-o"></i> 06:00 PM - 07:00 PM</p>
+										<h3 class="event-title">Speaker Sessions</h3>
+									</div>
+								</div>
+								<!-- /event -->
+
+								
+
+								<!-- event -->
+								<div class="event">
+									<div class="event-hour"></div>
+									<div class="event-content"><br><br>
+										<p class="event-time"><i class="fa fa-clock-o"></i> 08:00 PM - 12:00 AM</p>
+										<h3 class="my-5 event-title">Mid Reviews</h3>
+									</div>
+								</div>
+								<!-- /event -->
+
+								<!-- event
 						<div class="event">
 							<div class="event-hour"></div>
 							<div class="event-content"><br><br>
@@ -259,9 +481,9 @@
 								
 							</div>
 						</div>
-						<!-- /event -->
+						/event
 
-						<!-- event -->
+						event
 						<div class="event">
 							<div class="event-hour"></div>
 							<div class="event-content"><br><br>
@@ -270,9 +492,9 @@
 								
 							</div>
 						</div>
-						<!-- /event -->
+						/event
 
-						<!-- event -->
+						event
 						<div class="event">
 							<div class="event-hour"></div>
 							<div class="event-content"><br><br>
@@ -280,7 +502,7 @@
 								<h3 class="event-title">Final Evaluations Begin.</h3>
 							</div>
 						</div>
-						<!-- /event -->
+						/event
 
 						<div class="event">
 							<div class="event-hour"></div>
@@ -288,140 +510,152 @@
 								<p class="event-time"><i class="fa fa-clock-o"></i> 8 : 30 PM</p>
 								<h3 class="event-title">Result Declaration.</h3>
 							</div>
+						</div> -->
+							</div>
 						</div>
 					</div>
+					<!-- /row -->
 				</div>
+				<!-- /container -->
 			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</div>
-	<!-- /Event Schedule -->
+			<!-- /Event Schedule -->
 
-	<!-- CTA -->
-	<div id="rules" class="section">
-		<!-- background image -->
-		<div class="section-bg" style="background-image:url(./img/background03.jpg)" data-stellar-background-ratio="0.5"></div>
-		<!-- /background image -->
+			<!-- CTA -->
+			<div id="rules" class="section">
+				<!-- background image -->
+				<div class="section-bg" style="background-image:url(./img/background03.jpg)"
+					data-stellar-background-ratio="0.5"></div>
+				<!-- /background image -->
 
-		<!-- container -->
-		<div class="container">
-			<!-- container -->
-			<div class="row">
-				<!-- cta content -->
-				<div class="col-md-8 col-md-offset-2">
-					<div class="cta-content text-center">
-						<h2>Rules & FAQs</h2>
-						<p class="lead"></p>
-						<a href="./OSDHack_Rules.pdf" target="_blank" class="main-btn">Download Rules</a>
+				<!-- container -->
+				<div class="container">
+					<!-- container -->
+					<div class="row">
+						<!-- cta content -->
+						<div class="col-md-8 col-md-offset-2">
+							<div class="cta-content text-center">
+								<h2>Rules & FAQs</h2>
+								<p class="lead"></p>
+								<a href="./OSDHack_Rules.pdf" target="_blank" class="main-btn">Download Rules</a>
+							</div>
+						</div>
+						<!-- /cta content -->
 					</div>
+					<!-- /row -->
 				</div>
-				<!-- /cta content -->
+				<!-- /container -->
 			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</div>
-	<!-- /CTA -->
+			<!-- /CTA -->
 
-	<!-- Contact -->
-	<div id="contact" class="section">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<!-- section title -->
-				<div class="section-title">
-					<h3 class="title"><span>Contact</span> <span style="color: #dd0a37;">Info</span></h3>
-				</div>
-				<!-- /section title -->
 
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<h3>Venue</h3>
-						<p>CL-1 and CL-2 Lab <br> Jaypee Institute of Information Technology, <br>A 10, Block A, Industrial Area, Sector 62, Noida, <br> Uttar Pradesh 201309</p>
+
+			<!-- Contact -->
+			<div id="contact" class="section">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<!-- section title -->
+						<div class="section-title">
+							<h3 class="title"><span>Contact</span> <span style="color: #dd0a37;">Info</span></h3>
+						</div>
+						<!-- /section title -->
+
+						<!-- contact -->
+						<div class="col-sm-4">
+							<div class="contact">
+								<h3>Venue</h3>
+						<p>This hackathon is being hosted online 🌐!</p>
+							</div>
+						</div>
+						<!-- /contact -->
+
+						<!-- contact -->
+						<div class="col-sm-4">
+							<div class="contact">
+								<h3>Email</h3>
+								<a href="#">osdcjiit@gmail.com</a>
+							</div>
+						</div>
+						<!-- /contact -->
+
+						<div class="col-sm-4">
+							<div class="contact">
+								<h3>Telegram Channel</h3>
+								<a href="https://telegram.me/osdhack" target="_blank">telegram.me/osdhack</a>
+							</div>
+						</div>
+
 					</div>
+					<!-- /row -->
 				</div>
-				<!-- /contact -->
-
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<h3>Email</h3>
-						<a href="#">osdcjiit@gmail.com</a>
-					</div>
-				</div>
-				<!-- /contact -->
-
-				<div class="col-sm-4">
-					<div class="contact">
-						<h3>Telegram Channel</h3>
-						<a href="https://telegram.me/osdhack" target="_blank">telegram.me/osdhack</a>
-					</div>
-				</div>
-
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-
-	</div>
-	<!-- /Contact -->
-	<hr>
-	<!-- Footer -->
-	<footer id="footer">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-
-				<!-- footer logo -->
-				<div class="col-md-4 col-md-push-4">
-					<div class="footer-brand">
-						<a class="logo" href="index.html">
-							<img class="logo-img" src="./img/osdc-sticker.png" alt="logo">
-						</a>
-						<br>
-						<a href="https://www.contributor-covenant.org/" target="_blank"><p class="lead"></p>Code of Conduct</p></a>
-					</div>
-				</div>
-				<!-- /footer logo -->
-
-				<!-- contact social -->
-				<div class="col-md-4 col-md-push-4">
-					<div class="contact-social">
-						<a href="https://www.facebook.com/groups/jiitlug/" target="_blank"><i class="fa fa-facebook"></i></a>
-						<a href="https://twitter.com/osdcjiit" target="_blank"><i class="fa fa-twitter"></i></a>
-						<a href="https://www.linkedin.com/company/osdcjiit/" target="_blank"><i class="fa fa fa-linkedin"></i></a>
-					</div>
-				</div>
-				<!-- /contact social -->
-
-				<!-- copyright -->
-				<div class="col-md-4 col-md-pull-8">
-					
-					<span class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by <a href="osdc.netlify.com">OSDC</a><br>This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
-				</div>
-				<!-- /copyright -->
+				<!-- /container -->
 
 			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</footer>
-	<!-- /Footer -->
+			<!-- /Contact -->
+			<hr>
+			<!-- Footer -->
+			<footer id="footer">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
 
-	<!-- jQuery Plugins -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/jquery.countTo.js"></script>
-	<script src="js/main.js"></script>
+						<!-- footer logo -->
+						<div class="col-md-4 col-md-push-4">
+							<div class="footer-brand">
+								<a class="logo" href="index.html">
+									<img class="logo-img" src="./img/osdc-sticker.png" alt="logo">
+								</a>
+								<br>
+								<a href="https://www.contributor-covenant.org/" target="_blank">
+									<p class="lead"></p>Code of Conduct</p>
+								</a>
+							</div>
+						</div>
+						<!-- /footer logo -->
+
+						<!-- contact social -->
+						<div class="col-md-4 col-md-push-4">
+							<div class="contact-social">
+								<a href="https://www.facebook.com/groups/jiitlug/" target="_blank"><i
+										class="fab fa-facebook"></i></a>
+								<a href="https://twitter.com/osdcjiit" target="_blank"><i class="fab fa-twitter"></i></a>
+								<a href="https://discord.io/osdhack22" target="_blank"><i
+										class="fab fa-discord"></i></a>
+							</div>
+						</div>
+						<!-- /contact social -->
+
+						<!-- copyright -->
+						<div class="col-md-4 col-md-pull-8">
+
+							<span class="copyright">
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;
+								<script>document.write(new Date().getFullYear());</script> All rights reserved by <a
+									href="osdc.netlify.com">OSDC</a>
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</span>
+						</div>
+						<!-- /copyright -->
+
+					</div>
+					<!-- /row -->
+				</div>
+				<!-- /container -->
+			</footer>
+			<!-- /Footer -->
+
+			<!-- jQuery Plugins -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/jquery.waypoints.min.js"></script>
+			<script src="js/owl.carousel.min.js"></script>
+			<script src="js/jquery.stellar.min.js"></script>
+			<script src="js/jquery.countTo.js"></script>
+			<script src="js/main.js"></script>
+			<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
 </body>
 
