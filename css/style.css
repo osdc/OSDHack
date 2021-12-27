@@ -121,6 +121,10 @@ ol {
   opacity: 0.8;
 }
 
+.main-btn:focus {
+  color: white;
+}
+
 .input {
   height: 40px;
   width: 100%;
