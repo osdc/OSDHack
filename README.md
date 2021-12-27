@@ -1,4 +1,4 @@
 # OSDHack
 Website for OSDHack'22
 
-https://hackjiit.ossdevs.com/
+https://osdhack.ossdevs.com/
