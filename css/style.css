@@ -349,9 +349,9 @@ textarea.input {
   color: #dd0a37;
 }
 
-#header.transparent-navbar .main-nav li a:hover {
+/* #header.transparent-navbar .main-nav li a:hover {
   color: #dd0a37;
-}
+} */
 
 .navbar-toggle {
   display: none;
