@@ -40,7 +40,8 @@ RESPONSIVE
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  color: #444;
+  color: #fff;
+  background-color: #070920;
 }
 
 h1,
@@ -50,7 +51,7 @@ h4,
 h5,
 h6 {
   margin: 0px 0px 15px;
-  color: #0b0f28;
+  color: #fff;
   font-weight: 700;
 }
 
@@ -80,7 +81,7 @@ h4 {
 }
 
 a {
-  color: #0b0f28;
+  color: #fd377e;
   -webkit-transition: 0.3s color;
   transition: 0.3s color;
 }
@@ -246,7 +247,7 @@ textarea.input {
   left: 0;
   right: 0;
   top: 0;
-  background: #fff;
+  background: #a70c2d;
   -webkit-box-shadow: 0px 0px 3px #0003;
   box-shadow: 0px 0px 3px #0003;
   border-bottom: none;
@@ -279,7 +280,7 @@ textarea.input {
 .main-nav li a {
   position: relative;
   padding: 30px 15px;
-  color: #0b0f28;
+  color: #fff;
   text-transform: uppercase;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
@@ -290,7 +291,7 @@ textarea.input {
 }
 
 #header.fixed-navbar .main-nav li a {
-  color: #0b0f28;
+  color: #fff;
 }
 
 .main-nav li.active a:after {
