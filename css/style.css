@@ -893,10 +893,12 @@ textarea.input {
 
 .contact-social {
   text-align: right;
-  margin: 10px 0px;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
 }
 
-.contact-social a {
+/* .contact-social a {
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -908,6 +910,23 @@ textarea.input {
   margin-right: 15px;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+} */
+
+.contact-social a {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #dd0a37;
+  color: #fff;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.contact-social a:not(:last-child) {
+  margin-right: 15px;
 }
 
 .contact-social a:hover {
