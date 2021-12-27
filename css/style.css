@@ -95,6 +95,14 @@ a:focus {
   color: #dd0a37;
 }
 
+
+.main-btn:hover,
+.main-btn:focus {
+  text-decoration: none;
+  outline: none;
+  color: white;
+}
+
 ul,
 ol {
   margin: 0;
@@ -112,13 +120,26 @@ ol {
   border-radius: 2px;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+  border: 2px solid #dd0a37;
+  margin-right: 10px;
 }
 
 .main-btn:hover {
   color: white;
   border: 2px solid #dd0a37;
   background-color: inherit;
-  opacity: 0.8;
+}
+
+#discord {
+  color: white;
+  border: 2px solid #dd0a37;
+  background-color: inherit;
+}
+
+#discord:hover {
+  color: white;
+  border: 2px solid #dd0a37;
+  background-color: inherit;
 }
 
 .main-btn:focus {
@@ -150,7 +171,8 @@ textarea.input {
 
 .section {
   position: relative;
-  padding: 90px 0px;
+  /* padding: 20px 0px; */
+  padding-top: 100px;
 }
 
 .section-bg {
@@ -327,9 +349,9 @@ textarea.input {
   color: #dd0a37;
 }
 
-#header.transparent-navbar .main-nav li a:hover {
+/* #header.transparent-navbar .main-nav li a:hover {
   color: #dd0a37;
-}
+} */
 
 .navbar-toggle {
   display: none;
@@ -886,6 +908,16 @@ textarea.input {
   font-size: 42px;
   color: #dd0a37;
   cursor: pointer;
+}
+
+#rules_faqs {
+  padding: 20px 0px;
+}
+
+.style-two {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(221, 10, 55, 0.75), rgba(0, 0, 0, 0));
 }
 
 /*=========================================================
