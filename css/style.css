@@ -37,6 +37,10 @@ RESPONSIVE
 	typography
 \*----------------------------*/
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -94,7 +98,6 @@ a:focus {
   color: #dd0a37;
 }
 
-
 .main-btn:hover,
 .main-btn:focus {
   text-decoration: none;
@@ -110,7 +113,7 @@ ol {
 }
 
 .main-btn {
-  display: inline-block;
+  display: block;
   padding: 14px 50px;
   background: #dd0a37;
   color: #fff;
@@ -121,7 +124,6 @@ ol {
   transition: 0.3s all;
   border: 2px solid #dd0a37;
   margin-right: 10px;
-  margin-bottom: 10px;
 }
 
 .main-btn:hover {
@@ -144,6 +146,22 @@ ol {
 
 .main-btn:focus {
   color: white;
+}
+
+.discord-join-btn {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.discord-join-btn svg {
+  margin-right: 10px;
+}
+
+.home-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .input {
@@ -295,8 +313,6 @@ textarea.input {
   }
 }
 
-
-
 @keyframes slide-in {
   from {
     -webkit-transform: translateY(-100%);
@@ -403,6 +419,11 @@ textarea.input {
   }
   .navbar-toggle {
     display: block;
+  }
+
+  .home-links {
+    flex-direction: column;
+    gap: 1rem;
   }
 }
 
@@ -919,7 +940,12 @@ textarea.input {
 .style-two {
   border: 0;
   height: 2px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(221, 10, 55, 0.75), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(221, 10, 55, 0.75),
+    rgba(0, 0, 0, 0)
+  );
 }
 
 /*=========================================================
@@ -1177,85 +1203,117 @@ textarea.input {
   }
 }
 
-
 /* Star background code start */
 /* Star Background Code Author: https://codepen.io/WebSonick/pen/vjmgu */
 
-/* ============================================================================================== 
+/* ==============================================================================================
 SED Innovations
 https://sed.am
 https://mkrtchyan.ga
 ================================================================================================= */
 
-
 @keyframes move-twink-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
 }
 @-webkit-keyframes move-twink-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
 }
 @-moz-keyframes move-twink-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
 }
 @-ms-keyframes move-twink-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
 }
 
 @keyframes move-clouds-back {
-  from {background-position:0 0;}
-  to {background-position:10000px 0;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
 }
 @-webkit-keyframes move-clouds-back {
-  from {background-position:0 0;}
-  to {background-position:10000px 0;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
 }
 @-moz-keyframes move-clouds-back {
-  from {background-position:0 0;}
-  to {background-position:10000px 0;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
 }
 @-ms-keyframes move-clouds-back {
-  from {background-position: 0;}
-  to {background-position:10000px 0;}
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
 }
 
-.stars, .twinkling, .clouds {
-position:absolute;
-top:0;
-left:0;
-right:0;
-bottom:0;
-width:100%;
-height:100%;
-display:block;
+.stars,
+.twinkling,
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .stars {
-background:#000 url(../img/stars.png) repeat top center;
-z-index:1;
+  background: #000 url(../img/stars.png) repeat top center;
+  z-index: 1;
 }
 
-.twinkling{
-background:transparent url(../img/twinkling.png) repeat top center;
-z-index:2;
+.twinkling {
+  background: transparent url(../img/twinkling.png) repeat top center;
+  z-index: 2;
 
--moz-animation:move-twink-back 200s linear infinite;
--ms-animation:move-twink-back 200s linear infinite;
--o-animation:move-twink-back 200s linear infinite;
--webkit-animation:move-twink-back 200s linear infinite;
-animation:move-twink-back 200s linear infinite;
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite;
 }
 
-.clouds{
-  background:transparent url(../img/clouds3.png) repeat top center;
+.clouds {
+  background: transparent url(../img/clouds3.png) repeat top center;
   filter: hue-rotate(263deg);
-  z-index:4;
-  -moz-animation:move-clouds-back 100s linear infinite;
-  -ms-animation:move-clouds-back 100s linear infinite;
-  -o-animation:move-clouds-back 100s linear infinite;
-  -webkit-animation:move-clouds-back 100s linear infinite;
-  animation:move-clouds-back 100s linear infinite;
+  z-index: 4;
+  -moz-animation: move-clouds-back 100s linear infinite;
+  -ms-animation: move-clouds-back 100s linear infinite;
+  -o-animation: move-clouds-back 100s linear infinite;
+  -webkit-animation: move-clouds-back 100s linear infinite;
+  animation: move-clouds-back 100s linear infinite;
 }
