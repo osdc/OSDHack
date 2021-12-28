@@ -37,7 +37,6 @@ RESPONSIVE
 	typography
 \*----------------------------*/
 
-
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -295,6 +294,8 @@ textarea.input {
     transform: translateY(0%);
   }
 }
+
+
 
 @keyframes slide-in {
   from {
