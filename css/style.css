@@ -91,7 +91,7 @@ h4 {
 }
 
 a {
-  color: #fd377e;
+  color: #dd0a37;
   -webkit-transition: 0.3s color;
   transition: 0.3s color;
 }
@@ -959,6 +959,7 @@ textarea.input {
 
 #footer {
   padding: 60px 0px;
+  padding-bottom: 20px;
 }
 
 .footer-brand {
