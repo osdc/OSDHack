@@ -49,6 +49,11 @@ body {
   overflow-x: hidden;
 }
 
+::selection {
+  background-color: #dd0a37;
+  color: #fff;
+}
+
 h1,
 h2,
 h3,
