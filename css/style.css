@@ -49,6 +49,11 @@ body {
   overflow-x: hidden;
 }
 
+::selection {
+  background-color: #dd0a37;
+  color: #fff;
+}
+
 h1,
 h2,
 h3,
@@ -86,7 +91,7 @@ h4 {
 }
 
 a {
-  color: #fd377e;
+  color: #dd0a37;
   -webkit-transition: 0.3s color;
   transition: 0.3s color;
 }
@@ -954,6 +959,7 @@ textarea.input {
 
 #footer {
   padding: 60px 0px;
+  padding-bottom: 20px;
 }
 
 .footer-brand {
