@@ -157,6 +157,7 @@ ol {
   display: flex;
   align-items: center;
   margin: 0;
+  padding: 14px;
 }
 
 .discord-join-btn svg {
@@ -430,6 +431,14 @@ textarea.input {
     flex-direction: column;
     gap: 1rem;
   }
+
+  .register-btn {
+    /*margin-right: 0;*/
+    margin: 10% 0 5%;
+    /*margin-bottom: 4%;
+    margin-top: 10%;*/
+  }
+
 }
 
 /*=========================================================
