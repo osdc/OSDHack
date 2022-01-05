@@ -14,6 +14,15 @@
     position: relative;
     height: auto;
   }
+  .faq h1{
+    align-items: center;
+    z-index: 998;
+    margin-bottom: -20px;
+    color: #dd0a37;
+    font-size: 450%;
+    text-align: center;
+    margin-top: -150px;
+  }
   
   .faq-container {
     width: 100%;
@@ -64,7 +73,7 @@
   }
   
   .active {
-    border: 1px solid #C7C4C4;
+   background-color: #dd0a37;
     height: auto;
     margin-bottom: 25px;
   
@@ -77,12 +86,7 @@
     height:25px;
     margin-bottom: 3%;
   }
-  .global-label-text{
-    font-size:150%;
-    color:#196B85;
-    border-bottom: solid 2px #C4C1C1;
-    font-weight:bold;
-  }
+ 
   
 .navbar-brand {
   padding: 0;
@@ -101,7 +105,7 @@ h1{
   align-items: center;
   z-index: 998;
   padding-top: 10%;
-  color:#196B85;
+  color:#dd0a37;
   font-size:450%;
   text-align:center;
   margin:0;
@@ -318,4 +322,19 @@ h1{
     flex-direction: column;
     gap: 1rem;
   }
+}
+.style-two {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(221, 10, 55, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+  width: 60%;
+}
+
+.style-two:nth-child(2){
+  width: 100%;
 }
