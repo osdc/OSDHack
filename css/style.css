@@ -117,8 +117,8 @@ ol {
   list-style: none;
 }
 
-.presents{
-  margin-bottom:1%;
+.presents {
+  margin-bottom: 1%;
   height: 30px;
 }
 
@@ -402,6 +402,14 @@ textarea.input {
   color: #0b0f28 !important;
 }
 
+#jiitlogo {
+  /* position: absolute; */
+  /* float: right; */
+  height: 70px;
+  margin-top: 0.25em;
+  margin-left: 50px;
+}
+
 /* Mobile nav */
 
 @media only screen and (max-width: 767px) {
@@ -443,7 +451,6 @@ textarea.input {
     /*margin-bottom: 4%;
     margin-top: 10%;*/
   }
-
 }
 
 /*=========================================================
@@ -1337,8 +1344,7 @@ https://mkrtchyan.ga
   -webkit-animation: move-clouds-back 100s linear infinite;
   animation: move-clouds-back 100s linear infinite;
 }
-.team{
-  display:flex;
+.team {
+  display: flex;
   align-content: center;
 }
-
