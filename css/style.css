@@ -402,13 +402,6 @@ textarea.input {
   color: #0b0f28 !important;
 }
 
-#jiitlogo {
-  /* position: absolute; */
-  /* float: right; */
-  height: 70px;
-  margin-top: 0.25em;
-  margin-left: 50px;
-}
 
 /* Mobile nav */
 
@@ -1347,4 +1340,21 @@ https://mkrtchyan.ga
 .team {
   display: flex;
   align-content: center;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 20px;
+  font-size: large;
+  font-weight: 700;
+}
+.centro{
+  transform: translate(-25px);
+}
+@media only screen and (max-width: 1079px){
+  .centro{
+    transform: translate(0px);
+  }
 }
