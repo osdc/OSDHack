@@ -91,3 +91,16 @@
     });
   });
 })(jQuery);
+
+function prizes(){
+  var button = document.getElementById('viewbutton').getAttribute('aria-expanded');
+  var buttontext = document.getElementById('viewbutton');
+  console.log(button);
+  if(button === "true"){
+    buttontext.innerHTML = "Show More"; 
+  }
+   
+else {
+ buttontext.innerHTML = "Show Less";
+}
+}
