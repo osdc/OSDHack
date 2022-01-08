@@ -1343,10 +1343,7 @@ https://mkrtchyan.ga
   -webkit-animation: move-clouds-back 100s linear infinite;
   animation: move-clouds-back 100s linear infinite;
 }
-.team {
-  display: flex;
-  align-content: center;
-}
+
 
 .button{
   display: flex;
