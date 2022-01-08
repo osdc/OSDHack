@@ -446,7 +446,15 @@ textarea.input {
     /*margin-bottom: 4%;
     margin-top: 10%;*/
   }
+
+  #backgound_logo {
+    /* visibility: hidden; */
+    background-color: red;
+  }
+
 }
+
+
 
 /*=========================================================
 	HOME
@@ -1336,7 +1344,7 @@ https://mkrtchyan.ga
 .clouds {
   background: transparent url(../img/clouds3.png) repeat top center;
   filter: hue-rotate(263deg);
-  z-index: 4;
+  z-index: 3;
   -moz-animation: move-clouds-back 100s linear infinite;
   -ms-animation: move-clouds-back 100s linear infinite;
   -o-animation: move-clouds-back 100s linear infinite;
@@ -1345,7 +1353,7 @@ https://mkrtchyan.ga
 }
 .team {
   display: flex;
-  align-content: center;
+  justify-content: center;
 }
 
 .button{
