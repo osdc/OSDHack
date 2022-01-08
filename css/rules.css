@@ -1,3 +1,12 @@
+
+body {
+  color: #f6f7f7
+}
+
+::selection {
+  background-color: #196B85;
+}
+
 * {
     box-sizing: border-box;
   }
@@ -18,10 +27,11 @@
     align-items: center;
     z-index: 998;
     margin-bottom: -20px;
-    color: #dd0a37;
+    color: #c71239;
     font-size: 450%;
     text-align: center;
     margin-top: -150px;
+    margin-bottom: 22.5px;
   }
   
   .faq-container {
@@ -37,7 +47,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background:#196B85;
+    background: #c71239;
     border-radius: 5px;
   
   }
@@ -66,21 +76,27 @@
     height: 0;
     border-radius: 6px;
     overflow: hidden;
+    background-color: rgb(255,255,255,0.2);
   }
   
   .faq-answer-content {
     padding: 10px 10px 10px 15px;
+    color: rgb(255,255,255,0.9);
   }
   
   .active {
-   background-color: #dd0a37;
     height: auto;
     margin-bottom: 25px;
-  
   }
+
+  #rules_active {
+    background-color: #c71239;
+  }
+
   .rotate{
     transform: rotate(180deg)
   }
+
   .global-label{
     width:100%;
     height:25px;
@@ -105,7 +121,7 @@ h1{
   align-items: center;
   z-index: 998;
   padding-top: 10%;
-  color:#dd0a37;
+  color:#c71239;
   font-size:450%;
   text-align:center;
   margin:0;
@@ -119,10 +135,6 @@ h1{
 
 .rules li{
   margin-bottom: 1.5%;
-}
-
-::selection {
-  background-color: #196B85;
 }
 
 @media only screen and (max-width: 767px) {
@@ -245,7 +257,7 @@ h1{
   bottom: -3px;
   width: 100%;
   left: 0;
-  background: #dd0a37;
+  background: #c71239;
 }
 
 .main-nav li.active a:after {
@@ -255,13 +267,13 @@ h1{
   bottom: -3px;
   width: 100%;
   left: 0;
-  background: #dd0a37;
+  background: #c71239;
 }
 
 .main-nav li a:hover,
 .main-nav li a:focus {
   background-color: transparent;
-  color: #dd0a37;
+  color: #c71239;
 }
 
 /* #header.transparent-navbar .main-nav li a:hover {
@@ -311,7 +323,7 @@ h1{
   .main-nav li a:hover,
   .main-nav li a:focus,
   .main-nav li.active a {
-    background-color: #dd0a37;
+    background-color: #c71239;
     color: #fff !important;
   }
   .navbar-toggle {

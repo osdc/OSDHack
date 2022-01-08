@@ -3,11 +3,12 @@ Template Name: Event HTML TEMPLATE
 Author: yaminncco
 
 Colors:
-	Body 		  : #444
-	Headers 	: #0b0f28
-	Primary 	: #dd0a37
-	Dark 		  : #000
-	Grey 		  : #F9F9FA #DADADA
+	Body 		    : #444
+	Headers 	  : #0b0f28
+	Primary 	  : #c71239
+  Primary-Old : #dd0a37
+	Dark 		    : #000
+	Grey 		    : #F9F9FA #DADADA
 
 Fonts:
 
@@ -36,21 +37,22 @@ RESPONSIVE
 /*----------------------------*\
 	typography
 \*----------------------------*/
-
+/* 
 html {
   scroll-behavior: smooth;
-}
+} */
 
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  color: #fff;
+  /* color: #fff; */
+  color: #f6f7f7;
   background-color: #070920;
   overflow-x: hidden;
 }
 
 ::selection {
-  background-color: #dd0a37;
+  background-color: #196B85;
   color: #fff;
 }
 
@@ -91,7 +93,7 @@ h4 {
 }
 
 a {
-  color: #dd0a37;
+  color: #c71239;
   -webkit-transition: 0.3s color;
   transition: 0.3s color;
 }
@@ -100,7 +102,7 @@ a:hover,
 a:focus {
   text-decoration: none;
   outline: none;
-  color: #dd0a37;
+  color: #c71239;
 }
 
 .main-btn:hover,
@@ -125,32 +127,32 @@ ol {
 .main-btn {
   display: block;
   padding: 14px 50px;
-  background: #dd0a37;
+  background: #c71239;
   color: #fff;
   text-transform: uppercase;
   border: none;
   border-radius: 2px;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
-  border: 2px solid #dd0a37;
+  border: 2px solid #c71239;
   margin-right: 10px;
 }
 
 .main-btn:hover {
   color: white;
-  border: 2px solid #dd0a37;
+  border: 2px solid #c71239;
   background-color: inherit;
 }
 
 #discord {
   color: white;
-  border: 2px solid #dd0a37;
+  border: 2px solid #c71239;
   background-color: inherit;
 }
 
 #discord:hover {
   color: white;
-  border: 2px solid #dd0a37;
+  border: 2px solid #c71239;
   background-color: inherit;
 }
 
@@ -191,7 +193,7 @@ textarea.input {
 }
 
 .input:focus {
-  border-color: #dd0a37;
+  border-color: #c71239;
 }
 
 /*----------------------------*\
@@ -359,7 +361,7 @@ textarea.input {
   bottom: -3px;
   width: 100%;
   left: 0;
-  background: #dd0a37;
+  background: #c71239;
 }
 
 .main-nav li.active a:after {
@@ -369,17 +371,17 @@ textarea.input {
   bottom: -3px;
   width: 100%;
   left: 0;
-  background: #dd0a37;
+  background: #c71239;
 }
 
 .main-nav li a:hover,
 .main-nav li a:focus {
   background-color: transparent;
-  color: #dd0a37;
+  color: #c71239;
 }
 
 /* #header.transparent-navbar .main-nav li a:hover {
-  color: #dd0a37;
+  color: #c71239;
 } */
 
 .navbar-toggle {
@@ -426,7 +428,7 @@ textarea.input {
   .main-nav li a:hover,
   .main-nav li a:focus,
   .main-nav li.active a {
-    background-color: #dd0a37;
+    background-color: #c71239;
     color: #fff !important;
   }
   .navbar-toggle {
@@ -499,7 +501,7 @@ textarea.input {
 .number h3 {
   font-size: 42px;
   margin-bottom: 0px;
-  color: #dd0a37;
+  color: #c71239;
 }
 
 .number p {
@@ -549,7 +551,7 @@ textarea.input {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background: transparent;
-  color: #dd0a37;
+  color: #c71239;
   width: 90px;
   height: 90px;
   line-height: 90px;
@@ -612,7 +614,7 @@ textarea.input {
 .speaker .speaker-content {
   position: relative;
   padding: 30px;
-  background: #dd0a37;
+  background: #c71239;
   text-align: right;
   z-index: 20;
 }
@@ -644,7 +646,7 @@ textarea.input {
   line-height: 40px;
   text-align: center;
   color: #fff;
-  background: #dd0a37;
+  background: #c71239;
   z-index: 15;
   -webkit-transition: 0.3s opacity;
   transition: 0.3s opacity;
@@ -691,7 +693,7 @@ textarea.input {
   height: 60px;
   line-height: 60px;
   text-align: center;
-  background-color: #dd0a37 !important;
+  background-color: #c71239 !important;
   border-radius: 50%;
   padding: 0;
   color: #fff;
@@ -719,7 +721,7 @@ textarea.input {
 }
 
 .speaker-modal .speaker-modal-content .speaker-job {
-  color: #dd0a37;
+  color: #c71239;
 }
 
 .speaker-modal .speaker-modal-content .speaker-social {
@@ -735,7 +737,7 @@ textarea.input {
   text-align: center;
   font-size: 14px;
   border-radius: 50%;
-  background: #dd0a37;
+  background: #c71239;
   color: #fff;
   margin-right: 5px;
   -webkit-transition: 0.3s opacity;
@@ -770,7 +772,7 @@ textarea.input {
   .speaker-event
   > span
   strong {
-  color: #dd0a37;
+  color: #c71239;
 }
 
 /*=========================================================
@@ -792,7 +794,7 @@ textarea.input {
   top: 0px;
   bottom: 0px;
   width: 4px;
-  background-color: #dd0a37;
+  background-color: #c71239;
 }
 
 .event:last-child:after {
@@ -806,7 +808,7 @@ textarea.input {
   height: 60px;
   top: -60px;
   width: 4px;
-  background-color: #dd0a37;
+  background-color: #c71239;
 }
 
 .event .event-day {
@@ -816,7 +818,7 @@ textarea.input {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: #dd0a37;
+  background: #c71239;
   z-index: 10;
 }
 
@@ -827,7 +829,7 @@ textarea.input {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #dd0a37;
+  background: #c71239;
   z-index: 10;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -870,11 +872,11 @@ textarea.input {
 }
 
 .event .event-time i {
-  color: #dd0a37;
+  color: #c71239;
 }
 
 .event .event-content a {
-  color: #dd0a37;
+  color: #c71239;
 }
 
 .download-btn {
@@ -916,7 +918,7 @@ textarea.input {
 }
 
 .contact h3 {
-  color: #dd0a37;
+  color: #c71239;
 }
 
 #map {
@@ -948,7 +950,7 @@ textarea.input {
   text-align: center;
   line-height: 120px;
   font-size: 42px;
-  color: #dd0a37;
+  color: #c71239;
   cursor: pointer;
 }
 
@@ -1002,7 +1004,7 @@ textarea.input {
   height: 30px;
   text-align: center;
   border-radius: 50%;
-  background: #dd0a37;
+  background: #c71239;
   color: #fff;
   line-height: 30px;
   margin-right: 15px;
@@ -1017,7 +1019,7 @@ textarea.input {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: #dd0a37;
+  background: #c71239;
   color: #fff;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
@@ -1029,6 +1031,10 @@ textarea.input {
 
 .contact-social a:hover {
   opacity: 0.8;
+}
+
+.text-center {
+  margin-bottom: 20px;
 }
 
 /*=========================================================
@@ -1084,7 +1090,7 @@ textarea.input {
 .blog .blog-content .read-more {
   display: inline-block;
   padding: 7px 14px;
-  background: #dd0a37;
+  background: #c71239;
   color: #fff;
   text-transform: uppercase;
   border-radius: 2px;
@@ -1118,7 +1124,7 @@ textarea.input {
   display: inline-block;
   width: 30px;
   height: 30px;
-  background-color: #dd0a37;
+  background-color: #c71239;
   color: #fff;
   border-radius: 50%;
   line-height: 30px;
@@ -1158,7 +1164,7 @@ textarea.input {
 
 .blog .blog-comments .media .media-heading .reply-btn {
   margin-left: 10px;
-  color: #dd0a37;
+  color: #c71239;
 }
 
 .blog .blog-reply {
