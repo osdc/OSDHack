@@ -1216,7 +1216,6 @@ textarea.input {
   }
   ul{
     width:100%;
-    margin:0;
   }
 
   .custom-nav{
@@ -1232,6 +1231,9 @@ textarea.input {
     padding-bottom:2%;
   }
 
+  .main-nav {
+    margin: 0px;
+  }
 }
   
 @media only screen and (max-width: 992px) {
