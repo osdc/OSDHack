@@ -42,6 +42,8 @@ html {
   scroll-behavior: smooth;
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital@1&display=swap');
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -62,7 +64,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0px 0px 15px;
+  margin: 0px 0px 10px;
   color: #fff;
   font-weight: 700;
 }
@@ -196,6 +198,10 @@ textarea.input {
   border-color: #c71239;
 }
 
+#tagline  {
+  font-family: 'Averia Serif Libre', cursive;
+}
+
 /*----------------------------*\
 	Section
 \*----------------------------*/
@@ -265,6 +271,20 @@ textarea.input {
 @media only screen and (max-width: 767px) {
   .navbar-brand {
     margin: 15px 15px;
+  }
+
+  #osdhack {
+    position: absolute;
+    left: 7.5px;
+    top: 9px;
+    width: 63px;
+  }
+
+  #jiit {
+    position: absolute;
+    left: 80px;
+    top: 10px;
+    width: 63px;
   }
 }
 
@@ -1196,8 +1216,14 @@ textarea.input {
 
 @media only screen and (max-width: 767px) {
   .home-content h1 {
-    font-size: 31px;
+    font-size: 51px;
+    text-align: center;
   }
+
+  #tagline {
+    font-size: 20px;
+  }
+
   .page-wrapper-content h1 {
     font-size: 31px;
   }
@@ -1356,6 +1382,7 @@ https://mkrtchyan.ga
 .centro{
   transform: translate(-25px);
 }
+
 @media only screen and (max-width: 1079px){
   .centro{
     transform: translate(0px);
