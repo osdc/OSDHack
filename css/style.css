@@ -269,7 +269,7 @@ textarea.input {
   max-height: 50px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   .navbar-brand {
     margin: 15px 15px;
   }
@@ -428,7 +428,7 @@ textarea.input {
 
 /* Mobile nav */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   .main-nav {
     margin: 0px -15px;
     max-height: 0;
@@ -1204,7 +1204,29 @@ textarea.input {
 	RESPONSIVE
 ===========================================================*/
 
-@media only screen and (max-width: 991px) {
+@media only screen and (min-width: 768px) {
+  .navbar-header{
+    float:right;
+  }
+  
+@media (min-width: 768px) and (max-width: 992px){
+  .navbar-nav>li {
+    float: none;
+  }
+  ul{
+    width:100%;
+    margin:0;
+  }
+
+  .custom-nav{
+    width:100%;
+    margin:0;
+    padding:0;
+  }
+}
+  
+}
+@media only screen and (max-width: 992px) {
   .contact-social {
     text-align: center;
     margin: 30px 0px;
@@ -1215,7 +1237,7 @@ textarea.input {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   .home-content h1 {
     font-size: 51px;
     text-align: center;
