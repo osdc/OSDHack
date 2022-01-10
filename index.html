@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" id="top">
   <head>
+    <!-- Below two lines will redirect ossdevs subdomain to osdhackjiit.com -->
+    <script>
+      if (
+        window.location.href == "https://osdhack.ossdevs.com/" ||
+        window.location.href == "https://hackjiit.ossdevs.com/" ||
+        window.location.href == "https://hack.ossdevs.com/"
+      ) {
+        window.location.replace("https://osdhackjiit.com");
+      }
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
