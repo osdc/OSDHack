@@ -1,749 +1,894 @@
 <!DOCTYPE html>
 <html lang="en" id="top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Primary Meta Tags -->
 
-	<!-- Primary Meta Tags -->
+    <meta name="title" content="OSDHack'22" />
+    <meta
+      name="description"
+      content="OSDHack 2022 is a nationwide open hackathon being organised by the Open Source Developers Community of JIIT, Noida. It is a 48-hour long congregation of like-minded hackers and tech enthusiasts where participants will brainstorm and build on their idea."
+    />
 
-	<meta name="title" content="OSDHack'22">
-	<meta name="description"
-		content="OSDHack 2022 is a nationwide open hackathon being organised by the Open Source Developers Community of JIIT, Noida. It is a 48-hour long congregation of like-minded hackers and tech enthusiasts where participants will brainstorm and build on their idea.">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://osdhack.ossdevs.com/" />
+    <meta property="og:title" content="OSDHack'22" />
+    <meta
+      property="og:description"
+      content="OSDHack 2022 is a nationwide open hackathon being organised by the Open Source Developers Community of JIIT, Noida. It is a 48-hour long congregation of like-minded hackers and tech enthusiasts where participants will brainstorm and build on their idea."
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/osdc/OSDHack/master/img/META%20IMAGE.png"
+    />
 
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://osdhack.ossdevs.com/">
-	<meta property="og:title" content="OSDHack'22">
-	<meta property="og:description"
-		content="OSDHack 2022 is a nationwide open hackathon being organised by the Open Source Developers Community of JIIT, Noida. It is a 48-hour long congregation of like-minded hackers and tech enthusiasts where participants will brainstorm and build on their idea.">
-	<meta property="og:image"
-		content="https://raw.githubusercontent.com/osdc/OSDHack/master/img/META%20IMAGE.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://osdhack.ossdevs.com/" />
+    <meta property="twitter:title" content="OSDHack'22" />
+    <meta
+      property="twitter:description"
+      content="OSDHack 2022 is a nationwide open hackathon being organised by the Open Source Developers Community of JIIT, Noida. It is a 48-hour long congregation of like-minded hackers and tech enthusiasts where participants will brainstorm and build on their idea."
+    />
+    <meta
+      property="twitter:image"
+      content="https://raw.githubusercontent.com/osdc/OSDHack/master/img/META%20IMAGE.png"
+    />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="icon" type="image/png" href="img/osdhack-sticker.png" />
+    <title>OSDHack'22</title>
 
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:url" content="https://osdhack.ossdevs.com/">
-	<meta property="twitter:title" content="OSDHack'22">
-	<meta property="twitter:description"
-		content="OSDHack 2022 is a nationwide open hackathon being organised by the Open Source Developers Community of JIIT, Noida. It is a 48-hour long congregation of like-minded hackers and tech enthusiasts where participants will brainstorm and build on their idea.">
-	<meta property="twitter:image"
-		content="https://raw.githubusercontent.com/osdc/OSDHack/master/img/META%20IMAGE.png">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<link rel="icon" type="image/png" href="img/osdhack-sticker.png">
-	<title>OSDHack'22</title>
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700,900"
+      rel="stylesheet"
+    />
 
-	<!-- Google font -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
 
-	<!-- Bootstrap -->
-	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Owl Carousel -->
+    <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+    <link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
 
-	<!-- Owl Carousel -->
-	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
-	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
 
-	<!-- Font Awesome Icon -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
 
-	<!-- Custom stlylesheet -->
-	<link type="text/css" rel="stylesheet" href="css/style.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      .card {
+        margin-top: 4rem;
+        text-align: center;
+        width: 33%;
+      }
 
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-			  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-			  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-			<![endif]-->
-	<style>
-		.card {
-			margin-top: 4rem;
-			text-align: center;
-			width: 33%;
+      .card:nth-child(1) {
+        float: left;
+      }
 
-		}
+      .card:nth-child(2) {
+        float: right;
+      }
 
-		.card:nth-child(1) {
-			float: left;
-		}
+      .card-header {
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 900;
+      }
 
-		.card:nth-child(2) {
-			float: right;
-		}
+      .card-header h2 {
+        font-size: 1.5em;
+      }
 
-		.card-header {
-			margin-top: 1.5rem;
-			font-size: 1.5rem;
-			font-weight: 900;
-		}
+      .role p {
+        color: #6c715d;
+      }
 
-		.card-header h2 {
-			font-size: 1.5em;
-		}
+      .card-author {
+        width: 210px;
+        height: 210px;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 5px solid #c71239;
+        margin: 0 auto;
+      }
 
-		.role p {
-			color: #6c715d;
-		}
+      img {
+        height: 100%;
+        width: auto;
+      }
+    </style>
+  </head>
 
-		.card-author {
-			width: 210px;
-			height: 210px;
-			overflow: hidden;
-			border-radius: 50%;
-			border: 5px solid #c71239;
-			margin: 0 auto;
-		}
-
-		img {
-			height: 100%;
-			width: auto;
-		}
-	</style>
-</head>
-
-<body>
-	<!-- <div id="backgound_logo"
+  <body>
+    <!-- <div id="backgound_logo"
 		style="border-radius:0px 0px 30px 30px;width:100px;height:150px;background-color: #fff;opacity: 0.2;z-index: 997;position: fixed; left: 35px;">
 	</div> -->
 
+    <a href="#top">
+      <div id="osdhack">
+        <img
+          alt="logo"
+          src="img/osdhack-sticker.png"
+          class="logo-alt-img"
+          style="width: 100%"
+        />
+      </div>
+    </a>
+    <div id="jiit">
+      <img
+        alt="logo"
+        src="img/jiit logo.png"
+        class="logo-alt-img"
+        style="width: 100%"
+      />
+    </div>
 
-	<a href="#top">
-		<div id="osdhack">
-			<img alt="logo" src="img/osdhack-sticker.png" class="logo-alt-img" style="width: 100%;">
-		</div>
-	</a>
-	<div id="jiit">
-		<img alt="logo" src="img/jiit logo.png" class="logo-alt-img" style="width: 100%;">
-	</div>
-
-
-	<!-- Header -->
-	<header id="header" class="transparent-navbar">
-		<!-- container -->
-		<div class="container custom-nav">
-			<!-- navbar header -->
-			<div class="navbar-header">
-				<!-- Logo -->
-				<div class="navbar-brand">
-					<!-- <a class="logo" href="index.html">
+    <!-- Header -->
+    <header id="header" class="transparent-navbar">
+      <!-- container -->
+      <div class="container custom-nav">
+        <!-- navbar header -->
+        <div class="navbar-header">
+          <!-- Logo -->
+          <div class="navbar-brand">
+            <!-- <a class="logo" href="index.html">
 						<img class="logo-img" src="img/osdhack-sticker.png" alt="logo">
 						<img class="logo-alt-img" src="img/osdhack-sticker.png" alt="logo">
 					</a> -->
-				</div>
-				<!-- /Logo -->
+          </div>
+          <!-- /Logo -->
 
-				<!-- Mobile toggle -->
-				<button class="navbar-toggle">
-					<i class="fa fa-bars"></i>
-				</button>
-				<!-- /Mobile toggle -->
-			</div>
-			<!-- /navbar header -->
+          <!-- Mobile toggle -->
+          <button class="navbar-toggle">
+            <i class="fa fa-bars"></i>
+          </button>
+          <!-- /Mobile toggle -->
+        </div>
+        <!-- /navbar header -->
 
-			<!-- Navigation -->
-			<nav id="nav">
-				<ul class="main-nav nav navbar-nav navbar-right">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#prizes">Prizes</a></li>
-					<li><a href="#guest_speakers">Speakers</a></li>
-					<li><a href="#schedule">Schedule</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="rules.html" target=_blank>Rules&nbsp;<i class="fa fa-external-link"></i></a></li>
-				</ul>
-			</nav>
-			<!-- /Navigation -->
-		</div>
-		<!-- /container -->
-	</header>
-	<!-- /Header -->
+        <!-- Navigation -->
+        <nav id="nav">
+          <ul class="main-nav nav navbar-nav navbar-right">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#prizes">Prizes</a></li>
+            <li><a href="#guest_speakers">Speakers</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="rules.html" target="_blank"
+                >Rules&nbsp;<i class="fa fa-external-link"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /Navigation -->
+      </div>
+      <!-- /container -->
+    </header>
+    <!-- /Header -->
 
-	<div class="stars"></div>
-	<div class="clouds"></div>
-	<div class="twinkling" style="z-index: 2;"></div>
+    <div class="stars"></div>
+    <div class="clouds"></div>
+    <div class="twinkling" style="z-index: 2"></div>
 
-	<!-- Home -->
-	<div id="home">
-		<!-- background image -->
-		<!-- <div class="section-bg" style="background-image:url(img/background01.jpg)"
+    <!-- Home -->
+    <div id="home">
+      <!-- background image -->
+      <!-- <div class="section-bg" style="background-image:url(img/background01.jpg)"
 			data-stellar-background-ratio="0.5"></div> -->
-		<!-- /background image -->
+      <!-- /background image -->
 
-		<!-- home wrapper -->
-		<div class="home-wrapper" style="z-index: 5;">
-			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
-					<!-- home content -->
-					<div class="col-md-8 col-md-offset-2">
-						<div class="home-content">
-							<div class="home-organizer" style="color: #c71239;">
-								<h3>Open Source Developers Community</h3>
-								<h4>Jaypee Institute of Information Technology</h4>
-								<p style="color: white;">presents</p>
-								<h2 id="tagline">Kill the cliché</h3>
-							</div>
-							<div class="centro">
-								<h1>OSDHack'22</h1>
-							</div>
+      <!-- home wrapper -->
+      <div class="home-wrapper" style="z-index: 5">
+        <!-- container -->
+        <div class="container">
+          <!-- row -->
+          <div class="row">
+            <!-- home content -->
+            <div class="col-md-8 col-md-offset-2">
+              <div class="home-content">
+                <div class="home-organizer" style="color: #c71239">
+                  <h3>Open Source Developers Community</h3>
+                  <h4>Jaypee Institute of Information Technology</h4>
+                  <p style="color: white">presents</p>
+                  <h2 id="tagline">Kill the cliché</h2>
+                </div>
+                <div class="centro">
+                  <h1>OSDHack'22</h1>
+                </div>
 
-							<!-- <h4 class="lead">OSDHack 2022 is a nationwide open hackathon
+                <!-- <h4 class="lead">OSDHack 2022 is a nationwide open hackathon
 								being organised by the Open Source Developers
 								Community of JIIT, Noida. It is a 48-hour long
 								congregation of like-minded hackers and techenthusiasts
 								where participants will brainstorm and
 								build on their idea.</h4> -->
-							<h3 class="lead">20th-23rd January, 2022</h3>
-							<div class="home-links">
-								<div 
-									class="apply-button" 
-									data-hackathon-slug="osdchack" 
-									data-button-theme="light"
-									 style="height: 20px; width: 200px"
-								 ></div>
-									
-								<a href="https://discord.io/osdhack22" target="_blank"
-									class="main-btn discord-join-btn" style="height: 44px;border-radius: 4px;">
-									<svg x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50" style=" fill:#fff;">
-										<path
-											d="M 41.625 10.769531 C 37.644531 7.566406 31.347656 7.023438 31.078125 7.003906 C 30.660156 6.96875 30.261719 7.203125 30.089844 7.589844 C 30.074219 7.613281 29.9375 7.929688 29.785156 8.421875 C 32.417969 8.867188 35.652344 9.761719 38.578125 11.578125 C 39.046875 11.867188 39.191406 12.484375 38.902344 12.953125 C 38.710938 13.261719 38.386719 13.429688 38.050781 13.429688 C 37.871094 13.429688 37.6875 13.378906 37.523438 13.277344 C 32.492188 10.15625 26.210938 10 25 10 C 23.789063 10 17.503906 10.15625 12.476563 13.277344 C 12.007813 13.570313 11.390625 13.425781 11.101563 12.957031 C 10.808594 12.484375 10.953125 11.871094 11.421875 11.578125 C 14.347656 9.765625 17.582031 8.867188 20.214844 8.425781 C 20.0625 7.929688 19.925781 7.617188 19.914063 7.589844 C 19.738281 7.203125 19.34375 6.960938 18.921875 7.003906 C 18.652344 7.023438 12.355469 7.566406 8.320313 10.8125 C 6.214844 12.761719 2 24.152344 2 34 C 2 34.175781 2.046875 34.34375 2.132813 34.496094 C 5.039063 39.605469 12.972656 40.941406 14.78125 41 C 14.789063 41 14.800781 41 14.8125 41 C 15.132813 41 15.433594 40.847656 15.621094 40.589844 L 17.449219 38.074219 C 12.515625 36.800781 9.996094 34.636719 9.851563 34.507813 C 9.4375 34.144531 9.398438 33.511719 9.765625 33.097656 C 10.128906 32.683594 10.761719 32.644531 11.175781 33.007813 C 11.234375 33.0625 15.875 37 25 37 C 34.140625 37 38.78125 33.046875 38.828125 33.007813 C 39.242188 32.648438 39.871094 32.683594 40.238281 33.101563 C 40.601563 33.515625 40.5625 34.144531 40.148438 34.507813 C 40.003906 34.636719 37.484375 36.800781 32.550781 38.074219 L 34.378906 40.589844 C 34.566406 40.847656 34.867188 41 35.1875 41 C 35.199219 41 35.210938 41 35.21875 41 C 37.027344 40.941406 44.960938 39.605469 47.867188 34.496094 C 47.953125 34.34375 48 34.175781 48 34 C 48 24.152344 43.785156 12.761719 41.625 10.769531 Z M 18.5 30 C 16.566406 30 15 28.210938 15 26 C 15 23.789063 16.566406 22 18.5 22 C 20.433594 22 22 23.789063 22 26 C 22 28.210938 20.433594 30 18.5 30 Z M 31.5 30 C 29.566406 30 28 28.210938 28 26 C 28 23.789063 29.566406 22 31.5 22 C 33.433594 22 35 23.789063 35 26 C 35 28.210938 33.433594 30 31.5 30 Z">
-										</path>
-									</svg>
-									Join our Discord</a>
-							</div>
-						</div>
-					</div>
-					<!-- /home content -->
-				</div>
-				<!-- /row -->
-			</div>
-			<!-- /container -->
-		</div>
-		<!-- /home wrapper -->
-	</div>
-	<!-- /Home -->
+                <h3 class="lead">20th-23rd January, 2022</h3>
+                <div class="home-links">
+                  <div
+                    class="apply-button"
+                    data-hackathon-slug="osdchack"
+                    data-button-theme="light"
+                    style="height: 20px; width: 200px"
+                  ></div>
 
-	<!-- About -->
-	<div id="about" class="section">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<!-- section title -->
-				<div class="section-title">
-					<h3 class="title"><span>About</span> <span style="color: #c71239;">the Hackathon</span></h3>
-				</div>
-				<!-- /section title -->
+                  <a
+                    href="https://discord.io/osdhack22"
+                    target="_blank"
+                    class="main-btn discord-join-btn"
+                    style="height: 44px; border-radius: 4px"
+                  >
+                    <svg
+                      x="0px"
+                      y="0px"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 50 50"
+                      style="fill: #fff"
+                    >
+                      <path
+                        d="M 41.625 10.769531 C 37.644531 7.566406 31.347656 7.023438 31.078125 7.003906 C 30.660156 6.96875 30.261719 7.203125 30.089844 7.589844 C 30.074219 7.613281 29.9375 7.929688 29.785156 8.421875 C 32.417969 8.867188 35.652344 9.761719 38.578125 11.578125 C 39.046875 11.867188 39.191406 12.484375 38.902344 12.953125 C 38.710938 13.261719 38.386719 13.429688 38.050781 13.429688 C 37.871094 13.429688 37.6875 13.378906 37.523438 13.277344 C 32.492188 10.15625 26.210938 10 25 10 C 23.789063 10 17.503906 10.15625 12.476563 13.277344 C 12.007813 13.570313 11.390625 13.425781 11.101563 12.957031 C 10.808594 12.484375 10.953125 11.871094 11.421875 11.578125 C 14.347656 9.765625 17.582031 8.867188 20.214844 8.425781 C 20.0625 7.929688 19.925781 7.617188 19.914063 7.589844 C 19.738281 7.203125 19.34375 6.960938 18.921875 7.003906 C 18.652344 7.023438 12.355469 7.566406 8.320313 10.8125 C 6.214844 12.761719 2 24.152344 2 34 C 2 34.175781 2.046875 34.34375 2.132813 34.496094 C 5.039063 39.605469 12.972656 40.941406 14.78125 41 C 14.789063 41 14.800781 41 14.8125 41 C 15.132813 41 15.433594 40.847656 15.621094 40.589844 L 17.449219 38.074219 C 12.515625 36.800781 9.996094 34.636719 9.851563 34.507813 C 9.4375 34.144531 9.398438 33.511719 9.765625 33.097656 C 10.128906 32.683594 10.761719 32.644531 11.175781 33.007813 C 11.234375 33.0625 15.875 37 25 37 C 34.140625 37 38.78125 33.046875 38.828125 33.007813 C 39.242188 32.648438 39.871094 32.683594 40.238281 33.101563 C 40.601563 33.515625 40.5625 34.144531 40.148438 34.507813 C 40.003906 34.636719 37.484375 36.800781 32.550781 38.074219 L 34.378906 40.589844 C 34.566406 40.847656 34.867188 41 35.1875 41 C 35.199219 41 35.210938 41 35.21875 41 C 37.027344 40.941406 44.960938 39.605469 47.867188 34.496094 C 47.953125 34.34375 48 34.175781 48 34 C 48 24.152344 43.785156 12.761719 41.625 10.769531 Z M 18.5 30 C 16.566406 30 15 28.210938 15 26 C 15 23.789063 16.566406 22 18.5 22 C 20.433594 22 22 23.789063 22 26 C 22 28.210938 20.433594 30 18.5 30 Z M 31.5 30 C 29.566406 30 28 28.210938 28 26 C 28 23.789063 29.566406 22 31.5 22 C 33.433594 22 35 23.789063 35 26 C 35 28.210938 33.433594 30 31.5 30 Z"
+                      ></path>
+                    </svg>
+                    Join our Discord</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- /home content -->
+          </div>
+          <!-- /row -->
+        </div>
+        <!-- /container -->
+      </div>
+      <!-- /home wrapper -->
+    </div>
+    <!-- /Home -->
 
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<!-- about content -->
-					<div class="about-content">
-						<p style="font-size: 20px;">OSDHack 2022 is a nationwide open hackathon being organised by the Open Source Developers
-							Community of JIIT, Noida. It is a 48-hour long congregation of like-minded hackers and
-							tech enthusiasts where participants will brainstorm and build on their idea.
-						</p>
+    <!-- About -->
+    <div id="about" class="section">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <!-- section title -->
+          <div class="section-title">
+            <h3 class="title">
+              <span>About</span>
+              <span style="color: #c71239">the Hackathon</span>
+            </h3>
+          </div>
+          <!-- /section title -->
 
-
-					</div>
-					<!-- /about content -->
-					<!-- Numbers -->
-					<div id="numbers">
-						<!-- row -->
-						<div class="row">
-							<!-- number -->
-							<!-- <div class="col-md-4 col-sm-4 col-xs-6">
+          <div class="col-md-8 col-md-offset-2 text-center">
+            <!-- about content -->
+            <div class="about-content">
+              <p style="font-size: 20px">
+                OSDHack 2022 is a nationwide open hackathon being organised by
+                the Open Source Developers Community of JIIT, Noida. It is a
+                48-hour long congregation of like-minded hackers and tech
+                enthusiasts where participants will brainstorm and build on
+                their idea.
+              </p>
+            </div>
+            <!-- /about content -->
+            <!-- Numbers -->
+            <div id="numbers">
+              <!-- row -->
+              <div class="row">
+                <!-- number -->
+                <!-- <div class="col-md-4 col-sm-4 col-xs-6">
 								<div class="number">
 									<h3>48</span></h3>
 									<p>Hours</p>
 								</div>
 							</div> -->
-							<!-- /number -->
+                <!-- /number -->
 
-							<!-- number -->
-							<!-- <div class="col-md-4 col-sm-4 col-xs-6">
+                <!-- number -->
+                <!-- <div class="col-md-4 col-sm-4 col-xs-6">
 								<div class="number">
 									<h3><span class="counter" data-from="0" data-to="15" data-speed="1000">0</span>+</h3>
 									<p>Problem Statements</p>
 								</div> -->
-						</div>
-						<!-- /number -->
+              </div>
+              <!-- /number -->
 
-						<!-- number -->
-						<!-- <div class="col-md-4 col-sm-4 col-xs-6">
+              <!-- number -->
+              <!-- <div class="col-md-4 col-sm-4 col-xs-6">
 								<div class="number">
 									<h3><span class="counter" data-from="0" data-to="9000" data-speed="1000">0</span>+</h3>
 									<p>Lines of Code</p>
 								</div>
 							</div> -->
-						<!-- /number -->
+              <!-- /number -->
 
-						<!-- number -->
-						<!-- <div class="col-md-3 col-sm-3 col-xs-6">
+              <!-- number -->
+              <!-- <div class="col-md-3 col-sm-3 col-xs-6">
 								<div class="number">
 									<h3><span class="counter" data-from="0" data-to="4000" data-speed="1000">0</span></h3>
 									<p>Worth Prizes</p>
 								</div>
 							</div>  -->
-					</div>
-					<!-- /row -->
-				</div>
-				<!-- /Numbers -->
-			</div>
-		</div>
-		<!-- row -->
-	</div>
-	<!-- /container -->
-	</div>
-	<!-- /About -->
-	<!-- Galery -->
-	<div id="galery">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<!-- galery owl -->
-				<div id="galery-owl" class="owl-carousel owl-theme">
-					<!-- galery item -->
-					<div class="galery-item">
-						<img src="img/osdc_hack_2.jpeg" alt="" height="10px">
-					</div>
-					<!-- /galery item -->
-
-					<!-- galery item -->
-					<div class="galery-item">
-						<img src="img/osdc_hack_4.jpeg" alt="" height="10px">
-					</div>
-					<!-- /galery item -->
-
-					<!-- galery item -->
-					<div class="galery-item">
-						<img src="img/osdc_hack_1.jpeg" alt="" height="10px">
-
-					</div>
-					<!-- /galery item -->
-
-				</div>
-				<!-- /galery owl -->
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-	</div>
-	<!-- /Galery -->
-
-	<!-- Supported By -->
-	<div id="support" class="section">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<!-- section title -->
-				<div class="section-title">
-					<h3 class="title" style="padding-bottom: 5px;"><span>Organized </span> <span style="color: #c71239;">by</span></h3>
-				</div>
-				<!-- /section title -->
-
-				<!-- contact -->
-				
-				<div class="col-xs-3 col-xs-offset-0"></div>
-				<div class="col-xs-3 col-xs-offset-0">
-					<div class="contact">
-						<div class="speaker-img" style="margin-bottom: 15px;height: 150px; overflow: hidden;"><img
-								style="border-radius: 50%;" src="img/osdc img.png" alt="">
-						</div>
-						<a href="https://osdc.netlify.app/" target="_blank">
-							<h3 style="color:white;"> Open Source<br> Developer's Club</h3>
-						</a>
-					</div>
-				</div> <!-- contact -->
-				<div class="col-xs-3">
-					<div class="contact">
-						<div class="speaker-img" style="margin-bottom: 15px;height: 150px; overflow: hidden;"><img
-								style="border-radius: 50%;" src="img/jodc img.png" alt="">
-
-						</div>
-						<a href="https://jiitodc.netlify.app/" target="_blank">
-							<h3 style="color:white;">JIIT Open Source <br>Developer's Circle</h3>
-						</a>
-					</div>
-
-				</div>
-			</div>
-			<!-- row -->
-		</div>
-		<!-- /container -->
-	</div>
-	<!-- support -->
-
-	<div class="section" id="prizes">
-		<div class="container">
-			<div class="row">
-					<!-- section title -->
-					<div class="section-title">
-						<h3 class="title"><span>Prizes</span></h3>
-					</div>
-					<!-- /section title -->
-	
-					<!-- contact -->
-					
-					<div class="col-sm-4">
-						<div class="contact">
-							<div class="speaker-img" style="margin-bottom: 15px;height: 150px; overflow: hidden;"><img
-									style="border-radius: 50%;transform: scale(1.1);" src="img/second.png" alt="">
-							</div>
-								<h3> Rs 20,000</h3>
-							<h4 style="margin-top: -10px;">2nd Prize</h4>
-						</div>
-					</div> <!-- contact -->
-
-					<div class="col-sm-4">
-						<div class="contact">
-							<div class="speaker-img" style="margin-bottom: 15px;height: 150px; overflow: hidden;"><img
-									style="border-radius: 50%;transform: scale(1.2);" src="img/first.png" alt="">
-							</div>
-								<h3>Rs 30,000</h3>
-							<h4 style="margin-top: -10px;">1st Prize</h4>
-						</div>
-					</div> <!-- contact -->
-
-					<div class="col-sm-4">
-						<div class="contact">
-							<div class="speaker-img" style="margin-bottom: 15px;height: 150px; overflow: hidden;"><img
-									style="border-radius: 50%;" src="img/third.png" alt="">
-	
-							</div>
-								<h3> Rs 10,000</h3>
-							<h4 style="margin-top: -10px;">3rd Prize</h4>
-						</div>
-	
-					</div>
-				</div>
-			<div class="row">
-
-
-				<div id="demo" class="collapse">
-
-					<div class="col-sm-2">
-					<!--for begining-->
-				</div>
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<div class="speaker-img" style="margin-bottom: 15px;height: 150px; overflow: hidden;"><img
-								style="border-radius: 50%;" src="img/cup.png" alt="">
-						</div>
-							<h3>Rs 5,000</h3>
-						<h4 style="margin-top: -10px;">Consolation Prize<br> (Best JIIT-Only Team)</h4>
-					</div>
-				</div>
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<div class="speaker-img" style="margin-bottom: 15px;height: 150px; overflow: hidden;"><img
-								style="border-radius: 50%;" src="img/cup.png" alt="">
-						</div>
-							<h3>Rs 5,000</h3>
-						<h4 style="margin-top: -10px;">Consolation Prize <br>(Best Girls-Only Team)</h4>
-					</div>
-
-				</div>
-				<div class="col-sm-2">
-
-				</div>
-			</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="button"><button data-toggle="collapse" data-target="#demo" onclick="prizes()" id ="viewbutton"
-			style="display: block;
-			padding: 14px 50px;
-			background: #c71239;
-			color: #fff;
-			text-transform: uppercase;
-			border: none;
-			border-radius: 2px;
-			-webkit-transition: 0.3s all;
-			transition: 0.3s all;
-			border: 2px solid #c71239;
-			margin-right: 10px;
-			margin-top: 10px;">Show More </button></div>
-
-
-	<!-- Speakers -->
-	<div id="guest_speakers" class="section">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<!-- section title -->
-				<div class="section-title">
-					<h3 class="title"><span>Guest</span> <span style="color: #c71239;">Speakers</span></h3>
-				</div>
-				<!-- /section title -->
-
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<div class="speaker-img" style="margin-bottom: 15px;height: 150px; overflow: hidden;"><img
-								style="border-radius: 50%;" src="img/speaker1.jpeg" alt="">
-						</div>
-						<a href="https://www.linkedin.com/in/ryzokuken/" target="_blank">
-							<h3>Ujjwal Sharma</h3>
-						</a>
-						<h4 class="speaker-des" style="margin-top: -10px;">Compilers Hacker, Igalia</h4>
-					</div>
-				</div> <!-- contact -->
-				
-				<div class="col-sm-4">
-					<div class="contact">
-						<div class="speaker-img" style="margin-bottom: 15px;height: 150px; overflow: hidden;"><img
-								style="border-radius: 50%;" src="img/speaker3.jpeg" alt="">
-
-						</div>
-						<a href="https://www.linkedin.com/in/atrisharma/?originalSubdomain=in" target="_blank">
-							<h3>Atri Sharma</h3>
-						</a>
-						<h4 class="speaker-des atri-sharma-des" style="margin-top: -10px;">Distinguished Engineer, Securonix</h4>
-					</div>
-
-				</div>
-				<!--Centering the remaining two divs-->
-				<div class="col-sm-2">
-					<!--for begining-->
-				</div>
-				<!-- contact -->
-				<div class="col-sm-4">
-					<div class="contact">
-						<div class="speaker-img" style="margin-bottom: 15px;height: 150px; overflow: hidden;"><img
-								style="border-radius: 50%;" src="img/speaker4.jpeg" alt="">
-						</div>
-						<a href="https://www.linkedin.com/in/varodek" target="_blank">
-							<h3>Vaibhav Gupta</h3>
-						</a>
-						<h4 class="speaker-des" style="margin-top: -10px;">Software Engineer, CERN</h4>
-					</div>
-				</div>
-				<!-- contact -->
-				<div class="col-sm-2">
-					</div>
-				<div class="col-sm-4">
-					<div class="contact">
-						<div class="speaker-img" style="margin-bottom: 15px;height: 150px; overflow: hidden;"><img
-								style="border-radius: 50%;" src="img/speaker6.jpeg" alt="">
-						</div>
-						<a href="https://www.linkedin.com/in/arvindpunk/" target="_blank">
-							<h3>Arvind PJ</h3>
-						</a>
-						<h4 class="speaker-des" style="margin-top: -10px;">Software Engineer, Gamezop</h4>
-					</div>
-
-				</div>
-
-				<div class="col-sm-4">
-					<div class="contact">
-						<div class="speaker-img" style="margin-bottom: 15px;height: 150px; overflow: hidden;"><img
-								style="border-radius: 50%;" src="img/speaker7.jpeg" alt="">
-						</div>
-						<a href="https://www.linkedin.com/in/amanharitsh123" target="_blank">
-							<h3>Aman Sharma</h3>
-						</a>
-						<h4 class="speaker-des" style="margin-top: -10px;">Site Reliability Engineer, LinkedIn</h4>
-					</div>
-
-				</div>
-
-				<div class="col-sm-2">
-
-					</div>
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-
-	</div>
-	<!-- Event Schedule -->
-	<div id="schedule" class="section">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<!-- section title -->
-				<div class="section-title">
-					<h3 class="title"><span>Hackathon</span> <span style="color: #c71239;">Schedule</span></h3>
-				</div>
-				<!-- /section title -->
-
-				<div class="col-md-8 col-md-offset-2">
-
-					<div class="events-wrapper">
-						<!-- event -->
-						<div class="event">
-							<div class="event-day">
-								<div>
-									<span class="day">20</span>
-									<span class="year">Jan, 2022</span>
-								</div>
-							</div>
-							<div class="event-content">
-								<p class="event-time" style="padding-top: 35px;"><i class="fa fa-clock-o"></i> 12:30 PM - 01:30 PM</p>
-								<h3 class="event-title">Event Inauguration</h3>
-							</div>
-						</div>
-						<!-- /event -->
-
-						<!-- event -->
-						<div class="event">
-							<div class="event-hour"></div>
-							<div class="event-content"><br><br>
-								<p class="event-time"><i class="fa fa-clock-o"></i> 02:30 PM - 05:30 PM</p>
-								<h3 class="my-5 event-title">Speaker Sessions</h3>
-							</div>
-						</div>
-						<!-- /event -->
-
-						<!-- event -->
-						<div class="event">
-							<div class="event-hour"></div>
-						</div>
-
-						<div class="events-wrapper">
-							<!-- event -->
-							<div class="event">
-								<div class="event-day">
-									<div>
-										<span class="day">21</span>
-										<span class="year">Jan, 2022</span>
-									</div>
-								</div>
-
-								<div class="event-content">
-									<p class="event-time" style="padding-top: 35px;"><i class="fa fa-clock-o"></i> 12:00 AM</p>
-									<h3 class="event-title">Registrations Close</h3>
-								</div>
-
-
-							</div>
-							<!-- /event -->
-
-
-							<!-- event -->
-							<div class="event">
-								<div class="event-hour"></div>
-								<div class="event-content"><br><br>
-									<p class="event-time"><i class="fa fa-clock-o"></i> 05:00 PM</p>
-									<h3 class="my-5 event-title">Hacking Begins!</h3>
-								</div>
-							</div>
-							<!-- /event -->
-
-							<!-- event -->
-							<div class="event">
-								<div class="event-hour"></div>
-							</div>
-
-							<div class="events-wrapper">
-								<!-- event -->
-								<div class="event">
-									<div class="event-day">
-										<div>
-											<span class="day">22</span>
-											<span class="year">Jan, 2022</span>
-										</div>
-									</div>
-
-									<div class="event-content">
-										<p class="event-time" style="padding-top: 35px;"><i class="fa fa-clock-o"></i> 12:00 PM - 05:00 PM</p>
-										<h3 class="event-title">Mid Review</h3>
-									</div>
-
-
-								</div>
-								<!-- /event -->
-
-								<!-- event -->
-								<div class="event">
-									<div class="event-hour"></div>
-								</div>
-								<!-- /event -->
-
-
-
-								<!-- event -->
-								<div class="event">
-									<div class="event-hour"></div>
-								</div>
-
-								<div class="events-wrapper">
-									<!-- event -->
-									<div class="event">
-										<div class="event-day">
-											<div>
-												<span class="day">23</span>
-												<span class="year">Jan, 2022</span>
-											</div>
-										</div>
-
-										<div class="event-content">
-											<p class="event-time" style="padding-top: 35px;"><i class="fa fa-clock-o"></i> 10:00 AM - 03:00 PM</p>
-											<h3 class="event-title">Final Review</h3>
-										</div>
-
-
-									</div>
-									<!-- /event -->
-
-
-									<!-- event -->
-									<div class="event">
-										<div class="event-hour"></div>
-										<div class="event-content"><br><br>
-											<p class="event-time"><i class="fa fa-clock-o"></i> 04:00 PM</p>
-											<h3 class="my-5 event-title">Announcement of Top 10 Teams</h3>
-										</div>
-									</div>
-
-
-									<!-- /event -->
-
-									<!-- event -->
-									<div class="event">
-										<div class="event-hour"></div>
-										<div class="event-content"><br><br>
-											<p class="event-time"><i class="fa fa-clock-o"></i> 04:00 PM - 06:00 PM</p>
-											<h3 class="my-5 event-title">Demo Preparation</h3>
-										</div>
-									</div>
-
-
-									<!-- /event -->
-
-									<!-- event -->
-									<div class="event">
-										<div class="event-hour"></div>
-										<div class="event-content"><br><br>
-											<p class="event-time"><i class="fa fa-clock-o"></i> 06:00 PM - 09:00 PM</p>
-											<h3 class="my-5 event-title">Top 10 Teams' Project Demos</h3>
-										</div>
-									</div>
-
-
-									<!-- /event -->
-
-									<!-- event -->
-									<div class="event">
-										<div class="event-hour"></div>
-										<div class="event-content"><br><br>
-											<p class="event-time"><i class="fa fa-clock-o"></i> 10:00 PM</p>
-											<h3 class="my-5 event-title">Results & Closing Ceremony</h3>
-										</div>
-									</div>
-
-
-									<!-- /event -->
-
-									<!-- event
+            </div>
+            <!-- /row -->
+          </div>
+          <!-- /Numbers -->
+        </div>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- /container -->
+    <!-- /About -->
+    <!-- Galery -->
+    <div id="galery">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <!-- galery owl -->
+          <div id="galery-owl" class="owl-carousel owl-theme">
+            <!-- galery item -->
+            <div class="galery-item">
+              <img src="img/osdc_hack_2.jpeg" alt="" height="10px" />
+            </div>
+            <!-- /galery item -->
+
+            <!-- galery item -->
+            <div class="galery-item">
+              <img src="img/osdc_hack_4.jpeg" alt="" height="10px" />
+            </div>
+            <!-- /galery item -->
+
+            <!-- galery item -->
+            <div class="galery-item">
+              <img src="img/osdc_hack_1.jpeg" alt="" height="10px" />
+            </div>
+            <!-- /galery item -->
+          </div>
+          <!-- /galery owl -->
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
+    </div>
+    <!-- /Galery -->
+
+    <!-- Supported By -->
+    <div id="support" class="section">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <!-- section title -->
+          <div class="section-title">
+            <h3 class="title" style="padding-bottom: 5px">
+              <span>Organized </span> <span style="color: #c71239">by</span>
+            </h3>
+          </div>
+          <!-- /section title -->
+
+          <!-- contact -->
+
+          <div class="col-xs-3 col-xs-offset-0"></div>
+          <div class="col-xs-3 col-xs-offset-0">
+            <div class="contact">
+              <div
+                class="speaker-img"
+                style="margin-bottom: 15px; height: 150px; overflow: hidden"
+              >
+                <img style="border-radius: 50%" src="img/osdc img.png" alt="" />
+              </div>
+              <a href="https://osdc.netlify.app/" target="_blank">
+                <h3 style="color: white">
+                  Open Source<br />
+                  Developer's Club
+                </h3>
+              </a>
+            </div>
+          </div>
+          <!-- contact -->
+          <div class="col-xs-3">
+            <div class="contact">
+              <div
+                class="speaker-img"
+                style="margin-bottom: 15px; height: 150px; overflow: hidden"
+              >
+                <img style="border-radius: 50%" src="img/jodc img.png" alt="" />
+              </div>
+              <a href="https://jiitodc.netlify.app/" target="_blank">
+                <h3 style="color: white">
+                  JIIT Open Source <br />Developer's Circle
+                </h3>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- /container -->
+    </div>
+    <!-- support -->
+
+    <div class="section" id="prizes">
+      <div class="container">
+        <div class="row">
+          <!-- section title -->
+          <div class="section-title">
+            <h3 class="title"><span>Prizes</span></h3>
+          </div>
+          <!-- /section title -->
+
+          <!-- contact -->
+
+          <div class="col-sm-4">
+            <div class="contact">
+              <div
+                class="speaker-img"
+                style="margin-bottom: 15px; height: 150px; overflow: hidden"
+              >
+                <img
+                  style="border-radius: 50%; transform: scale(1.1)"
+                  src="img/second.png"
+                  alt=""
+                />
+              </div>
+              <h3>Rs 20,000</h3>
+              <h4 style="margin-top: -10px">2nd Prize</h4>
+            </div>
+          </div>
+          <!-- contact -->
+
+          <div class="col-sm-4">
+            <div class="contact">
+              <div
+                class="speaker-img"
+                style="margin-bottom: 15px; height: 150px; overflow: hidden"
+              >
+                <img
+                  style="border-radius: 50%; transform: scale(1.2)"
+                  src="img/first.png"
+                  alt=""
+                />
+              </div>
+              <h3>Rs 30,000</h3>
+              <h4 style="margin-top: -10px">1st Prize</h4>
+            </div>
+          </div>
+          <!-- contact -->
+
+          <div class="col-sm-4">
+            <div class="contact">
+              <div
+                class="speaker-img"
+                style="margin-bottom: 15px; height: 150px; overflow: hidden"
+              >
+                <img style="border-radius: 50%" src="img/third.png" alt="" />
+              </div>
+              <h3>Rs 10,000</h3>
+              <h4 style="margin-top: -10px">3rd Prize</h4>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div id="demo" class="collapse">
+            <div class="col-sm-2">
+              <!--for begining-->
+            </div>
+            <!-- contact -->
+            <div class="col-sm-4">
+              <div class="contact">
+                <div
+                  class="speaker-img"
+                  style="margin-bottom: 15px; height: 150px; overflow: hidden"
+                >
+                  <img style="border-radius: 50%" src="img/cup.png" alt="" />
+                </div>
+                <h3>Rs 5,000</h3>
+                <h4 style="margin-top: -10px">
+                  Consolation Prize<br />
+                  (Best JIIT-Only Team)
+                </h4>
+              </div>
+            </div>
+            <!-- contact -->
+            <div class="col-sm-4">
+              <div class="contact">
+                <div
+                  class="speaker-img"
+                  style="margin-bottom: 15px; height: 150px; overflow: hidden"
+                >
+                  <img style="border-radius: 50%" src="img/cup.png" alt="" />
+                </div>
+                <h3>Rs 5,000</h3>
+                <h4 style="margin-top: -10px">
+                  Consolation Prize <br />(Best Girls-Only Team)
+                </h4>
+              </div>
+            </div>
+            <div class="col-sm-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="button">
+      <button
+        data-toggle="collapse"
+        data-target="#demo"
+        onclick="prizes()"
+        id="viewbutton"
+        style="
+          display: block;
+          padding: 14px 50px;
+          background: #c71239;
+          color: #fff;
+          text-transform: uppercase;
+          border: none;
+          border-radius: 2px;
+          -webkit-transition: 0.3s all;
+          transition: 0.3s all;
+          border: 2px solid #c71239;
+          margin-right: 10px;
+          margin-top: 10px;
+        "
+      >
+        Show More
+      </button>
+    </div>
+
+    <!-- Speakers -->
+    <div id="guest_speakers" class="section">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <!-- section title -->
+          <div class="section-title">
+            <h3 class="title">
+              <span>Guest</span> <span style="color: #c71239">Speakers</span>
+            </h3>
+          </div>
+          <!-- /section title -->
+
+          <!-- contact -->
+          <div class="col-sm-4">
+            <div class="contact">
+              <div
+                class="speaker-img"
+                style="margin-bottom: 15px; height: 150px; overflow: hidden"
+              >
+                <img
+                  style="border-radius: 50%"
+                  src="img/speaker1.jpeg"
+                  alt=""
+                />
+              </div>
+              <a href="https://www.linkedin.com/in/ryzokuken/" target="_blank">
+                <h3>Ujjwal Sharma</h3>
+              </a>
+              <h4 class="speaker-des" style="margin-top: -10px">
+                Compilers Hacker, Igalia
+              </h4>
+            </div>
+          </div>
+          <!-- contact -->
+
+          <div class="col-sm-4">
+            <div class="contact">
+              <div
+                class="speaker-img"
+                style="margin-bottom: 15px; height: 150px; overflow: hidden"
+              >
+                <img
+                  style="border-radius: 50%"
+                  src="img/speaker3.jpeg"
+                  alt=""
+                />
+              </div>
+              <a
+                href="https://www.linkedin.com/in/atrisharma/?originalSubdomain=in"
+                target="_blank"
+              >
+                <h3>Atri Sharma</h3>
+              </a>
+              <h4 class="speaker-des atri-sharma-des" style="margin-top: -10px">
+                Distinguished Engineer, Securonix
+              </h4>
+            </div>
+          </div>
+          <!--Centering the remaining two divs-->
+          <div class="col-sm-2">
+            <!--for begining-->
+          </div>
+          <!-- contact -->
+          <div class="col-sm-4">
+            <div class="contact">
+              <div
+                class="speaker-img"
+                style="margin-bottom: 15px; height: 150px; overflow: hidden"
+              >
+                <img
+                  style="border-radius: 50%"
+                  src="img/speaker4.jpeg"
+                  alt=""
+                />
+              </div>
+              <a href="https://www.linkedin.com/in/varodek" target="_blank">
+                <h3>Vaibhav Gupta</h3>
+              </a>
+              <h4 class="speaker-des" style="margin-top: -10px">
+                Software Engineer, CERN
+              </h4>
+            </div>
+          </div>
+          <!-- contact -->
+          <div class="col-sm-2"></div>
+          <div class="col-sm-4">
+            <div class="contact">
+              <div
+                class="speaker-img"
+                style="margin-bottom: 15px; height: 150px; overflow: hidden"
+              >
+                <img
+                  style="border-radius: 50%"
+                  src="img/speaker6.jpeg"
+                  alt=""
+                />
+              </div>
+              <a href="https://www.linkedin.com/in/arvindpunk/" target="_blank">
+                <h3>Arvind PJ</h3>
+              </a>
+              <h4 class="speaker-des" style="margin-top: -10px">
+                Software Engineer, Gamezop
+              </h4>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="contact">
+              <div
+                class="speaker-img"
+                style="margin-bottom: 15px; height: 150px; overflow: hidden"
+              >
+                <img
+                  style="border-radius: 50%"
+                  src="img/speaker7.jpeg"
+                  alt=""
+                />
+              </div>
+              <a
+                href="https://www.linkedin.com/in/amanharitsh123"
+                target="_blank"
+              >
+                <h3>Aman Sharma</h3>
+              </a>
+              <h4 class="speaker-des" style="margin-top: -10px">
+                Site Reliability Engineer, LinkedIn
+              </h4>
+            </div>
+          </div>
+
+          <div class="col-sm-2"></div>
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
+    </div>
+    <!-- Event Schedule -->
+    <div id="schedule" class="section">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <!-- section title -->
+          <div class="section-title">
+            <h3 class="title">
+              <span>Hackathon</span>
+              <span style="color: #c71239">Schedule</span>
+            </h3>
+          </div>
+          <!-- /section title -->
+
+          <div class="col-md-8 col-md-offset-2">
+            <div class="events-wrapper">
+              <!-- event -->
+              <div class="event">
+                <div class="event-day">
+                  <div>
+                    <span class="day">20</span>
+                    <span class="year">Jan, 2022</span>
+                  </div>
+                </div>
+                <div class="event-content">
+                  <p class="event-time" style="padding-top: 35px">
+                    <i class="fa fa-clock-o"></i> 12:30 PM - 01:30 PM
+                  </p>
+                  <h3 class="event-title">Event Inauguration</h3>
+                </div>
+              </div>
+              <!-- /event -->
+
+              <!-- event -->
+              <div class="event">
+                <div class="event-hour"></div>
+                <div class="event-content">
+                  <br /><br />
+                  <p class="event-time">
+                    <i class="fa fa-clock-o"></i> 02:30 PM - 05:30 PM
+                  </p>
+                  <h3 class="my-5 event-title">Speaker Sessions</h3>
+                </div>
+              </div>
+              <!-- /event -->
+
+              <!-- event -->
+              <div class="event">
+                <div class="event-hour"></div>
+              </div>
+
+              <div class="events-wrapper">
+                <!-- event -->
+                <div class="event">
+                  <div class="event-day">
+                    <div>
+                      <span class="day">21</span>
+                      <span class="year">Jan, 2022</span>
+                    </div>
+                  </div>
+
+                  <div class="event-content">
+                    <p class="event-time" style="padding-top: 35px">
+                      <i class="fa fa-clock-o"></i> 12:00 AM
+                    </p>
+                    <h3 class="event-title">Registrations Close</h3>
+                  </div>
+                </div>
+                <!-- /event -->
+
+                <!-- event -->
+                <div class="event">
+                  <div class="event-hour"></div>
+                  <div class="event-content">
+                    <br /><br />
+                    <p class="event-time">
+                      <i class="fa fa-clock-o"></i> 05:00 PM
+                    </p>
+                    <h3 class="my-5 event-title">Hacking Begins!</h3>
+                  </div>
+                </div>
+                <!-- /event -->
+
+                <!-- event -->
+                <div class="event">
+                  <div class="event-hour"></div>
+                </div>
+
+                <div class="events-wrapper">
+                  <!-- event -->
+                  <div class="event">
+                    <div class="event-day">
+                      <div>
+                        <span class="day">22</span>
+                        <span class="year">Jan, 2022</span>
+                      </div>
+                    </div>
+
+                    <div class="event-content">
+                      <p class="event-time" style="padding-top: 35px">
+                        <i class="fa fa-clock-o"></i> 12:00 PM - 05:00 PM
+                      </p>
+                      <h3 class="event-title">Mid Review</h3>
+                    </div>
+                  </div>
+                  <!-- /event -->
+
+                  <!-- event -->
+                  <div class="event">
+                    <div class="event-hour"></div>
+                  </div>
+                  <!-- /event -->
+
+                  <!-- event -->
+                  <div class="event">
+                    <div class="event-hour"></div>
+                  </div>
+
+                  <div class="events-wrapper">
+                    <!-- event -->
+                    <div class="event">
+                      <div class="event-day">
+                        <div>
+                          <span class="day">23</span>
+                          <span class="year">Jan, 2022</span>
+                        </div>
+                      </div>
+
+                      <div class="event-content">
+                        <p class="event-time" style="padding-top: 35px">
+                          <i class="fa fa-clock-o"></i> 10:00 AM - 03:00 PM
+                        </p>
+                        <h3 class="event-title">Final Review</h3>
+                      </div>
+                    </div>
+                    <!-- /event -->
+
+                    <!-- event -->
+                    <div class="event">
+                      <div class="event-hour"></div>
+                      <div class="event-content">
+                        <br /><br />
+                        <p class="event-time">
+                          <i class="fa fa-clock-o"></i> 04:00 PM
+                        </p>
+                        <h3 class="my-5 event-title">
+                          Announcement of Top 10 Teams
+                        </h3>
+                      </div>
+                    </div>
+
+                    <!-- /event -->
+
+                    <!-- event -->
+                    <div class="event">
+                      <div class="event-hour"></div>
+                      <div class="event-content">
+                        <br /><br />
+                        <p class="event-time">
+                          <i class="fa fa-clock-o"></i> 04:00 PM - 06:00 PM
+                        </p>
+                        <h3 class="my-5 event-title">Demo Preparation</h3>
+                      </div>
+                    </div>
+
+                    <!-- /event -->
+
+                    <!-- event -->
+                    <div class="event">
+                      <div class="event-hour"></div>
+                      <div class="event-content">
+                        <br /><br />
+                        <p class="event-time">
+                          <i class="fa fa-clock-o"></i> 06:00 PM - 09:00 PM
+                        </p>
+                        <h3 class="my-5 event-title">
+                          Top 10 Teams' Project Demos
+                        </h3>
+                      </div>
+                    </div>
+
+                    <!-- /event -->
+
+                    <!-- event -->
+                    <div class="event">
+                      <div class="event-hour"></div>
+                      <div class="event-content">
+                        <br /><br />
+                        <p class="event-time">
+                          <i class="fa fa-clock-o"></i> 10:00 PM
+                        </p>
+                        <h3 class="my-5 event-title">
+                          Results & Closing Ceremony
+                        </h3>
+                      </div>
+                    </div>
+
+                    <!-- /event -->
+
+                    <!-- event
 						<div class="event">
 							<div class="event-hour"></div>
 							<div class="event-content"><br><br>
@@ -782,24 +927,22 @@
 								<h3 class="event-title">Result Declaration.</h3>
 							</div>
 						</div> -->
+                  </div>
+                  <!-- /row -->
+                </div>
+                <!-- /container -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
 
+    <!-- /Event Schedule -->
 
-								</div>
-								<!-- /row -->
-							</div>
-							<!-- /container -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<br>
-	<br>
-
-	<!-- /Event Schedule -->
-
-	<!-- CTA
+    <!-- CTA
 						<div id="rules" class="section">
 							background image
 								<div class="section-bg" style="background-image:url(img/background03.jpg);  "
@@ -832,335 +975,458 @@
 						</div>
 						/CTA -->
 
-
-
-
-						<!--Sponsors-->
-						<div class="section">
-							<div class="container">
-								<div class="row" >
-
-								<!-- <div class="section-title">
+    <!--Sponsors-->
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="section-title">
 									<h3 class="title"><span>Sponsors</span> <span style="color: #c71239;"></span></h3>
 								</div> -->
 
-								<!-- /section title -->
-								<!--Centering the remaining two divs-->
-								<div class="text-center"style="transform: translateX(-3px)">
-									<h4><span style="color: #FFD700;font-size: 40px;">Gold</span> &nbsp; <span style="font-size: 40px;">Sponsors</span></h4>
-								</div>
-								<div class="col-sm-2">
-									<!--for begining-->
-								</div>
-								<!-- contact -->
-								<div class="col-sm-4">
-									<div class="contact" >
-										<a href="https://devfolio.co/" target="_blank">
-										<div class="speaker-img" style="border-radius: 10px;padding: 25px;background-color: rgb(255,255,255,0.1);margin-bottom: 15px;height: 100%;width:100;"><img
-												 src="img/Devfolio_Logo-White.svg" alt="" style="height: 100%; width:100%;">
-										</div>	
-										</a>
-										
-									</div>
-				
-								</div> 
-								<!-- contact -->
-								<div class="col-sm-4">
-									<div class="contact" >
-										<a href="https://polygon.technology/" target="_blank">
-											<div class="speaker-img" style="border-radius: 10px;padding: 25px;background-color: rgb(255,255,255,0.1);margin-bottom: 15px;height: 100%;width:100;"><img
-												 src="img/Polygon_Logo-White.svg" alt="" style="height: 100%; width:95%;">
-										</div>
-										</a>
-										
-									</div>
-				
-								</div>
-							</div>
-								<div class="row" style="margin-right: 60px; margin-top: 40px;">
-                                <div class="text-center" style="transform: translateX(37px)">
-									<h4><span style="color: #71706E;font-size: 40px;">Silver</span> &nbsp; <span style="font-size: 40px;">Sponsors</span></h4>
-								</div>
-								<div class="col-sm-2">
-									<!--for begining-->
-								</div>
-								<!-- contact -->
-								<div class="col-sm-3">
-									<div class="contact" style="padding:5px">
-                                        <a href="https://celo.org/" target=_blank>
-										<div class="speaker-img" style="border-radius: 10px;padding: 10px;background-color: rgb(255,255,255,0.1);margin-bottom: 15px;height: 100%;width:100;"><img
+          <!-- /section title -->
+          <!--Centering the remaining two divs-->
+          <div class="text-center" style="transform: translateX(-3px)">
+            <h4>
+              <span style="color: #ffd700; font-size: 40px">Gold</span> &nbsp;
+              <span style="font-size: 40px">Sponsors</span>
+            </h4>
+          </div>
+          <div class="col-sm-2">
+            <!--for begining-->
+          </div>
+          <!-- contact -->
+          <div class="col-sm-4">
+            <div class="contact">
+              <a href="https://devfolio.co/" target="_blank">
+                <div
+                  class="speaker-img"
+                  style="
+                    border-radius: 10px;
+                    padding: 25px;
+                    background-color: rgb(255, 255, 255, 0.1);
+                    margin-bottom: 15px;
+                    height: 100%;
+                    width: 100;
+                  "
+                >
+                  <img
+                    src="img/Devfolio_Logo-White.svg"
+                    alt=""
+                    style="height: 100%; width: 100%"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- contact -->
+          <div class="col-sm-4">
+            <div class="contact">
+              <a href="https://polygon.technology/" target="_blank">
+                <div
+                  class="speaker-img"
+                  style="
+                    border-radius: 10px;
+                    padding: 25px;
+                    background-color: rgb(255, 255, 255, 0.1);
+                    margin-bottom: 15px;
+                    height: 100%;
+                    width: 100;
+                  "
+                >
+                  <img
+                    src="img/Polygon_Logo-White.svg"
+                    alt=""
+                    style="height: 100%; width: 95%"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-right: 60px; margin-top: 40px">
+          <div class="text-center" style="transform: translateX(37px)">
+            <h4>
+              <span style="color: #71706e; font-size: 40px">Silver</span> &nbsp;
+              <span style="font-size: 40px">Sponsors</span>
+            </h4>
+          </div>
+          <div class="col-sm-2">
+            <!--for begining-->
+          </div>
+          <!-- contact -->
+          <div class="col-sm-3">
+            <div class="contact" style="padding: 5px">
+              <a href="https://celo.org/" target="_blank">
+                <div
+                  class="speaker-img"
+                  style="
+                    border-radius: 10px;
+                    padding: 10px;
+                    background-color: rgb(255, 255, 255, 0.1);
+                    margin-bottom: 15px;
+                    height: 100%;
+                    width: 100;
+                  "
+                >
+                  <img
+                    src="img/Celo_Logo_Color_Reverse.svg"
+                    alt=""
+                    style="height: 100%; width: 100%"
+                  /></div
+              ></a>
+            </div>
+          </div>
+          <!-- contact -->
+          <div class="col-sm-3">
+            <div class="contact" style="padding: 5px">
+              <a href="https://filecoin.io/" target="_blank">
+                <div
+                  class="speaker-img"
+                  style="
+                    border-radius: 10px;
+                    padding: 25px;
+                    background-color: rgb(255, 255, 255, 0.1);
+                    margin-bottom: 15px;
+                    height: 100%;
+                    width: 100;
+                  "
+                >
+                  <img
+                    src="img/Filecoin_White.svg"
+                    alt=""
+                    style="height: 100%; width: 105%"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
 
-												 src="img/Celo_Logo_Color_Reverse.svg" alt="" style="height: 100%; width:100%; ">
-										</div></a>
-										
-									</div>
-				
-								</div> 
-								<!-- contact -->
-								<div class="col-sm-3">
-									<div class="contact"  style="padding:5px">
-                                        <a href="https://filecoin.io/" target=_blank>
-										<div class="speaker-img" style="border-radius: 10px;padding: 25px;background-color: rgb(255,255,255,0.1);margin-bottom: 15px;height: 100%;width:100;"><img
-												 src="img/Filecoin_White.svg" alt="" style="height: 100%; width:105%; ">
+          <!-- contact -->
+          <div class="col-sm-3">
+            <div class="contact" style="padding: 5px">
+              <a href="https://tezos.com/" target="_blank">
+                <div
+                  class="speaker-img"
+                  style="
+                    border-radius: 10px;
+                    padding: 25px;
+                    background-color: rgb(255, 255, 255, 0.1);
+                    margin-bottom: 15px;
+                    height: 100%;
+                    width: 100;
+                  "
+                >
+                  <img
+                    src="img/Tezos_Logo-White.svg"
+                    alt=""
+                    style="height: 100%; width: 95%"
+                  /></div
+              ></a>
+            </div>
+          </div>
+          <!-- contact -->
+        </div>
+      </div>
+      <!--Sponsors-->
+    </div>
 
-										</div>
-										</a>
-									</div>
-				
-								</div>
-								
-								
-								<!-- contact -->
-								<div class="col-sm-3">
-									<div class="contact" style="padding:5px" >
-                                        <a href="https://tezos.com/"target=_blank>
-										<div class="speaker-img" style="border-radius: 10px;padding: 25px;background-color: rgb(255,255,255,0.1);margin-bottom: 15px;height: 100%;width:100;"><img
-												 src="img/Tezos_Logo-White.svg" alt="" style="height: 100%; width:95%; ">
-
-										</div></a>
-									</div>
-				
-								</div> 
-								<!-- contact -->
-							
-							</div>
-						</div>
-						<!--Sponsors-->
-						</div>
-
-	<!-- /Galery -->
-	<!-- Team -->
-	<div class="team">
-		<div id="team" class="section">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<div class="text-center"style="transform: translateX(-3px)">
-					<h4><span style="color:#c71239 ;font-size: 40px;"></span> &nbsp; <span style="font-size: 40px;">Coordinators</span></h4>
-				</div>
-				<!-- contact -->
-				<div class="col-xs-3 col-xs-offset-0">
-					<!--for beginning-->
-				</div>
-				<div class="col-xs-3 col-xs-offset-0">
-					<div class="contact" style="padding:5px" >
-
-						<div class="speaker-img" style="border-radius: 10px;padding: 35px;background-color: rgb(255,255,255,0.1);margin-bottom: 15px;height: 200px;">
-							<h2>Dr. Manish K. Thakur</h2>
-							<h4 style="color: #c71239;">Faculty Coordinator</h4>
-						</div>
-					</div>
-
-				</div> 
-				<!-- contact -->
-				<div class="col-xs-3">
-					<div class="contact" style="padding:5px " >
-
-						<div class="speaker-img" style="border-radius: 10px;padding: 35px;background-color: rgb(255,255,255,0.1);margin-bottom: 15px;height: 201px;">
-							<h2>Barun Acharya</h2>
-							<h4 style="color: #c71239;">Student Coordinator</h4>
-							<a href=" https://www.linkedin.com/in/barun-acharya" style="margin:2px" target=_blank><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-linkedin" viewBox="0 0 16 16" >
-								<path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-							  </svg></a>
-							<a href="https://github.com/daemon1024 "style="margin:2px" target=_blank><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-github" viewBox="0 0 16 16">
-								<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-							  </svg></a>
-						</div>
-					</div>
-
-				</div> 
-			</div>
-				<!-- <div class="row" style="margin-right: 60px; margin-top: 20px;">
+    <!-- /Galery -->
+    <!-- Team -->
+    <div class="team">
+      <div id="team" class="section">
+        <!-- container -->
+        <div class="container">
+          <!-- row -->
+          <div class="row">
+            <div class="text-center" style="transform: translateX(-3px)">
+              <h4>
+                <span style="color: #c71239; font-size: 40px"></span> &nbsp;
+                <span style="font-size: 40px">Coordinators</span>
+              </h4>
+            </div>
+            <!-- contact -->
+            <div class="col-xs-3 col-xs-offset-0">
+              <!--for beginning-->
+            </div>
+            <div class="col-xs-3 col-xs-offset-0">
+              <div class="contact" style="padding: 5px">
+                <div
+                  class="speaker-img"
+                  style="
+                    border-radius: 10px;
+                    padding: 35px;
+                    background-color: rgb(255, 255, 255, 0.1);
+                    margin-bottom: 15px;
+                    height: 200px;
+                  "
+                >
+                  <h2>Dr. Manish K. Thakur</h2>
+                  <h4 style="color: #c71239">Faculty Coordinator</h4>
+                </div>
+              </div>
+            </div>
+            <!-- contact -->
+            <div class="col-xs-3">
+              <div class="contact" style="padding: 5px">
+                <div
+                  class="speaker-img"
+                  style="
+                    border-radius: 10px;
+                    padding: 35px;
+                    background-color: rgb(255, 255, 255, 0.1);
+                    margin-bottom: 15px;
+                    height: 201px;
+                  "
+                >
+                  <h2>Sarthak Kathpalia</h2>
+                  <h4 style="color: #c71239">Student Coordinator</h4>
+                  <a
+                    href="https://www.linkedin.com/in/sarthak-kathpalia/"
+                    style="margin: 2px"
+                    target="_blank"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="#fff"
+                      class="bi bi-linkedin"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                      /></svg
+                  ></a>
+                  <a
+                    href="https://github.com/sarthakkathpalia"
+                    style="margin: 2px"
+                    target="_blank"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="#fff"
+                      class="bi bi-github"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                      /></svg
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="row" style="margin-right: 60px; margin-top: 20px;">
 				<div class="col-sm-2">
 					<for begining-->
-				</div>
-				<!-- contact -->
-				
-		</div>
-	</div>
-	
-	
-	<!-- Contact -->
-	<div class="contact-info-center">
-		<div id="contact" class="section">
-			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
-					<div class="col-md-2">
+        </div>
+        <!-- contact -->
+      </div>
+    </div>
 
-					</div>
-					<div class="col-md-8">
-						<!-- section title -->
-						<div class="section-title">
-							<h3 class="title"><span>Contact</span> <span style="color: #c71239;">Info</span>
-							</h3>
-						</div>
-						<!-- /section title -->
+    <!-- Contact -->
+    <div class="contact-info-center">
+      <div id="contact" class="section">
+        <!-- container -->
+        <div class="container">
+          <!-- row -->
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+              <!-- section title -->
+              <div class="section-title">
+                <h3 class="title">
+                  <span>Contact</span> <span style="color: #c71239">Info</span>
+                </h3>
+              </div>
+              <!-- /section title -->
 
-						<!-- contact -->
-						<div class="col-sm-4">
-							<div class="contact">
-								<h3>Venue</h3>
-								<p>Anywhere (as long as there's internet).</p>
-							</div>
-						</div>
-						<!-- /contact -->
+              <!-- contact -->
+              <div class="col-sm-4">
+                <div class="contact">
+                  <h3>Venue</h3>
+                  <p>Anywhere (as long as there's internet).</p>
+                </div>
+              </div>
+              <!-- /contact -->
 
-						<!-- contact -->
-						<div class="col-sm-4">
-							<div class="contact">
-								<h3>Email</h3>
-								<style>
-									.email {
-										color: white;
-										background-color: transparent;
-										text-decoration: none;
-									}
+              <!-- contact -->
+              <div class="col-sm-4">
+                <div class="contact">
+                  <h3>Email</h3>
+                  <style>
+                    .email {
+                      color: white;
+                      background-color: transparent;
+                      text-decoration: none;
+                    }
 
-									.email:visited {
-										color: white;
-										background-color: transparent;
-										text-decoration: none;
-									}
+                    .email:visited {
+                      color: white;
+                      background-color: transparent;
+                      text-decoration: none;
+                    }
 
-									.email:hover {
-										color: red;
-										background-color: transparent;
-										text-decoration: underline;
-									}
+                    .email:hover {
+                      color: red;
+                      background-color: transparent;
+                      text-decoration: underline;
+                    }
 
-									.email:active {
-										color: white;
-										background-color: transparent;
-										text-decoration: underline;
-									}
-								</style>
-								<a class="email" href="mailto: osdcjiit@gmail.com"
-									target="_blank">osdcjiit@gmail.com</a>
-							</div>
-						</div>
-						<!-- /contact -->
+                    .email:active {
+                      color: white;
+                      background-color: transparent;
+                      text-decoration: underline;
+                    }
+                  </style>
+                  <a
+                    class="email"
+                    href="mailto: osdcjiit@gmail.com"
+                    target="_blank"
+                    >osdcjiit@gmail.com</a
+                  >
+                </div>
+              </div>
+              <!-- /contact -->
 
-						<div class="col-sm-4">
-							<div class="contact">
-								<h3>Discord</h3>
-								<style>
-									.email {
-										color: white;
-										background-color: transparent;
-										text-decoration: none;
-									}
+              <div class="col-sm-4">
+                <div class="contact">
+                  <h3>Discord</h3>
+                  <style>
+                    .email {
+                      color: white;
+                      background-color: transparent;
+                      text-decoration: none;
+                    }
 
-									.email:visited {
-										color: white;
-										background-color: transparent;
-										text-decoration: none;
-									}
+                    .email:visited {
+                      color: white;
+                      background-color: transparent;
+                      text-decoration: none;
+                    }
 
-									.email:hover {
-										color: red;
-										background-color: transparent;
-										text-decoration: underline;
-									}
-								</style>
-								<a class="email" href="https://discord.io/osdhack22"
-									target="_blank">discord.io/osdhack22</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /row -->
-			</div>
-			<!-- /container -->
+                    .email:hover {
+                      color: red;
+                      background-color: transparent;
+                      text-decoration: underline;
+                    }
+                  </style>
+                  <a
+                    class="email"
+                    href="https://discord.io/osdhack22"
+                    target="_blank"
+                    >discord.io/osdhack22</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /row -->
+        </div>
+        <!-- /container -->
+      </div>
+    </div>
+    <!-- /Contact -->
+    <!-- <hr> -->
+    <!-- Footer -->
+    <footer
+      id="footer"
+      style="
+        background-color: #0b0d25;
+        box-shadow: 0px -20px 51px -2px #010215;
+        border-radius: 50% 50% 0px 0px;
+      "
+    >
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <div class="col-md-2"></div>
 
-		</div>
-	</div>
-	<!-- /Contact -->
-	<!-- <hr> -->
-	<!-- Footer -->
-	<footer id="footer" style="
-    background-color: #0b0d25;
-    box-shadow: 0px -20px 51px -2px #010215;
-    border-radius: 50% 50% 0px 0px;
-">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<div class="col-md-2"></div>
+          <!-- footer logo -->
+          <div class="col-md-4">
+            <div class="footer-brand">
+              <a class="logo" href="index.html">
+                <!-- <img class="logo-img" src="img/osdhack-sticker.png" alt="logo"> -->
+              </a>
+              <!-- <br> -->
+              <a href="https://www.contributor-covenant.org/" target="_blank">
+                <p>Code of Conduct</p>
+              </a>
+            </div>
+          </div>
+          <!-- /footer logo -->
 
-				<!-- footer logo -->
-				<div class="col-md-4">
-					<div class="footer-brand">
-						<a class="logo" href="index.html">
-							<!-- <img class="logo-img" src="img/osdhack-sticker.png" alt="logo"> -->
-						</a>
-						<!-- <br> -->
-						<a href="https://www.contributor-covenant.org/" target="_blank">
-							<p class=""></p>Code of Conduct</p>
-						</a>
-					</div>
-				</div>
-				<!-- /footer logo -->
+          <!-- contact social -->
+          <div class="col-md-4">
+            <div class="contact-social">
+              <a href="https://discord.io/osdhack22" target="_blank">
+                <svg
+                  x="0px"
+                  y="0px"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 50 50"
+                  style="fill: #fff"
+                >
+                  <path
+                    d="M 41.625 10.769531 C 37.644531 7.566406 31.347656 7.023438 31.078125 7.003906 C 30.660156 6.96875 30.261719 7.203125 30.089844 7.589844 C 30.074219 7.613281 29.9375 7.929688 29.785156 8.421875 C 32.417969 8.867188 35.652344 9.761719 38.578125 11.578125 C 39.046875 11.867188 39.191406 12.484375 38.902344 12.953125 C 38.710938 13.261719 38.386719 13.429688 38.050781 13.429688 C 37.871094 13.429688 37.6875 13.378906 37.523438 13.277344 C 32.492188 10.15625 26.210938 10 25 10 C 23.789063 10 17.503906 10.15625 12.476563 13.277344 C 12.007813 13.570313 11.390625 13.425781 11.101563 12.957031 C 10.808594 12.484375 10.953125 11.871094 11.421875 11.578125 C 14.347656 9.765625 17.582031 8.867188 20.214844 8.425781 C 20.0625 7.929688 19.925781 7.617188 19.914063 7.589844 C 19.738281 7.203125 19.34375 6.960938 18.921875 7.003906 C 18.652344 7.023438 12.355469 7.566406 8.320313 10.8125 C 6.214844 12.761719 2 24.152344 2 34 C 2 34.175781 2.046875 34.34375 2.132813 34.496094 C 5.039063 39.605469 12.972656 40.941406 14.78125 41 C 14.789063 41 14.800781 41 14.8125 41 C 15.132813 41 15.433594 40.847656 15.621094 40.589844 L 17.449219 38.074219 C 12.515625 36.800781 9.996094 34.636719 9.851563 34.507813 C 9.4375 34.144531 9.398438 33.511719 9.765625 33.097656 C 10.128906 32.683594 10.761719 32.644531 11.175781 33.007813 C 11.234375 33.0625 15.875 37 25 37 C 34.140625 37 38.78125 33.046875 38.828125 33.007813 C 39.242188 32.648438 39.871094 32.683594 40.238281 33.101563 C 40.601563 33.515625 40.5625 34.144531 40.148438 34.507813 C 40.003906 34.636719 37.484375 36.800781 32.550781 38.074219 L 34.378906 40.589844 C 34.566406 40.847656 34.867188 41 35.1875 41 C 35.199219 41 35.210938 41 35.21875 41 C 37.027344 40.941406 44.960938 39.605469 47.867188 34.496094 C 47.953125 34.34375 48 34.175781 48 34 C 48 24.152344 43.785156 12.761719 41.625 10.769531 Z M 18.5 30 C 16.566406 30 15 28.210938 15 26 C 15 23.789063 16.566406 22 18.5 22 C 20.433594 22 22 23.789063 22 26 C 22 28.210938 20.433594 30 18.5 30 Z M 31.5 30 C 29.566406 30 28 28.210938 28 26 C 28 23.789063 29.566406 22 31.5 22 C 33.433594 22 35 23.789063 35 26 C 35 28.210938 33.433594 30 31.5 30 Z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="https://twitter.com/osdcjiit" target="_blank">
+                <svg
+                  x="0px"
+                  y="0px"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 30 30"
+                  style="fill: #fff"
+                >
+                  <path
+                    d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="https://ossdevs.com" target="_blank">
+                <i class="fa fa-home" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <!-- /contact social -->
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
+      <!-- copyright -->
 
-				<!-- contact social -->
-				<div class="col-md-4">
-					<div class="contact-social">
-
-						<a href="https://discord.io/osdhack22" target="_blank">
-							<svg x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50" style=" fill:#fff;">
-								<path
-									d="M 41.625 10.769531 C 37.644531 7.566406 31.347656 7.023438 31.078125 7.003906 C 30.660156 6.96875 30.261719 7.203125 30.089844 7.589844 C 30.074219 7.613281 29.9375 7.929688 29.785156 8.421875 C 32.417969 8.867188 35.652344 9.761719 38.578125 11.578125 C 39.046875 11.867188 39.191406 12.484375 38.902344 12.953125 C 38.710938 13.261719 38.386719 13.429688 38.050781 13.429688 C 37.871094 13.429688 37.6875 13.378906 37.523438 13.277344 C 32.492188 10.15625 26.210938 10 25 10 C 23.789063 10 17.503906 10.15625 12.476563 13.277344 C 12.007813 13.570313 11.390625 13.425781 11.101563 12.957031 C 10.808594 12.484375 10.953125 11.871094 11.421875 11.578125 C 14.347656 9.765625 17.582031 8.867188 20.214844 8.425781 C 20.0625 7.929688 19.925781 7.617188 19.914063 7.589844 C 19.738281 7.203125 19.34375 6.960938 18.921875 7.003906 C 18.652344 7.023438 12.355469 7.566406 8.320313 10.8125 C 6.214844 12.761719 2 24.152344 2 34 C 2 34.175781 2.046875 34.34375 2.132813 34.496094 C 5.039063 39.605469 12.972656 40.941406 14.78125 41 C 14.789063 41 14.800781 41 14.8125 41 C 15.132813 41 15.433594 40.847656 15.621094 40.589844 L 17.449219 38.074219 C 12.515625 36.800781 9.996094 34.636719 9.851563 34.507813 C 9.4375 34.144531 9.398438 33.511719 9.765625 33.097656 C 10.128906 32.683594 10.761719 32.644531 11.175781 33.007813 C 11.234375 33.0625 15.875 37 25 37 C 34.140625 37 38.78125 33.046875 38.828125 33.007813 C 39.242188 32.648438 39.871094 32.683594 40.238281 33.101563 C 40.601563 33.515625 40.5625 34.144531 40.148438 34.507813 C 40.003906 34.636719 37.484375 36.800781 32.550781 38.074219 L 34.378906 40.589844 C 34.566406 40.847656 34.867188 41 35.1875 41 C 35.199219 41 35.210938 41 35.21875 41 C 37.027344 40.941406 44.960938 39.605469 47.867188 34.496094 C 47.953125 34.34375 48 34.175781 48 34 C 48 24.152344 43.785156 12.761719 41.625 10.769531 Z M 18.5 30 C 16.566406 30 15 28.210938 15 26 C 15 23.789063 16.566406 22 18.5 22 C 20.433594 22 22 23.789063 22 26 C 22 28.210938 20.433594 30 18.5 30 Z M 31.5 30 C 29.566406 30 28 28.210938 28 26 C 28 23.789063 29.566406 22 31.5 22 C 33.433594 22 35 23.789063 35 26 C 35 28.210938 33.433594 30 31.5 30 Z">
-								</path>
-							</svg>
-
-						</a>
-						<a href="https://twitter.com/osdcjiit" target="_blank">
-							<svg x="0px" y="0px" width="20" height="20" viewBox="0 0 30 30" style=" fill:#fff;">
-								<path
-									d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z">
-								</path>
-							</svg>
-						</a>
-						<a href="https://ossdevs.com" target="_blank">
-							<i class="fa fa-home" aria-hidden="true"></i>
-						</a>
-
-					</div>
-				</div>
-				<!-- /contact social -->
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-		<!-- copyright -->
-
-		<!-- /copyright -->
-	</footer>
-	<div class="text-center" style="background-color: #0b0d25;">
-
-		<!-- <span class="copyright"> -->
-		<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-		&copy;
-		<script>document.write(new Date().getFullYear());</script> <a
-		href="https://osdc.netlify.app/" target="_blank">OSDC</a>. All rights reserved.
-		<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-		<!-- </span> -->
-	</div>
-	<!-- /Footer -->
-	<!-- jQuery Plugins -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/jquery.countTo.js"></script>
-	<script src="js/main.js"></script>
-	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-	<script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
-
-</body>
-
+      <!-- /copyright -->
+    </footer>
+    <div class="text-center" style="background-color: #0b0d25">
+      <!-- <span class="copyright"> -->
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      &copy;
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      <a href="https://osdc.netlify.app/" target="_blank">OSDC</a>. All rights
+      reserved.
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      <!-- </span> -->
+    </div>
+    <!-- /Footer -->
+    <!-- jQuery Plugins -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+  </body>
 </html>
