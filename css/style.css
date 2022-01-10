@@ -243,6 +243,9 @@ textarea.input {
   text-align: center;
   margin-bottom: 60px;
 }
+.section-title-prize {
+  text-align: center;
+}
 
 .section-title .title {
   position: relative;
