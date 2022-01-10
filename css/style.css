@@ -1226,6 +1226,7 @@ textarea.input {
   .navbar-header{
     float:right;
   }
+}
   
 @media (min-width: 768px) and (max-width: 992px){
   .navbar-nav>li {
@@ -1233,7 +1234,6 @@ textarea.input {
   }
   ul{
     width:100%;
-    margin:0;
   }
 
   .custom-nav{
@@ -1241,9 +1241,19 @@ textarea.input {
     margin:0;
     padding:0;
   }
+  .speaker-des{
+    padding-bottom:10%;
+  }
+  
+  .atri-sharma-des{
+    padding-bottom:2%;
+  }
+
+  .main-nav {
+    margin: 0px;
+  }
 }
   
-}
 @media only screen and (max-width: 992px) {
   .contact-social {
     text-align: center;
