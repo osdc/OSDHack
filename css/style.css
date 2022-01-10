@@ -203,6 +203,22 @@ textarea.input {
   font-family: 'Averia Serif Libre', cursive;
 }
 
+#osdhack {
+  z-index: 999;
+  position: fixed; 
+  left: 38.5px;
+  top: 25px;
+  width: 90px;
+}
+
+#jiit {
+  z-index: 999;
+  position: fixed; 
+  left: 160px;
+  top: 25px;
+  width: 75px;
+}
+
 /*----------------------------*\
 	Section
 \*----------------------------*/
@@ -275,17 +291,19 @@ textarea.input {
   }
 
   #osdhack {
-    position: absolute;
-    left: 7.5px;
-    top: 9px;
-    width: 63px;
+    z-index: 999;
+    position: fixed; 
+    left: 38.5px;
+    top: 4px;
+    width: 73px;
   }
-
+  
   #jiit {
-    position: absolute;
-    left: 80px;
-    top: 10px;
-    width: 63px;
+    z-index: 999;
+    position: fixed; 
+    left: 131px;
+    top: 6px;
+    width: 55px;
   }
 }
 
@@ -1402,12 +1420,19 @@ https://mkrtchyan.ga
   font-size: large;
   font-weight: 700;
 }
+
 .centro{
-  transform: translate(-25px);
+  transform: translate(0px);
 }
 
-@media only screen and (max-width: 1079px){
+@media only screen and (min-width: 992px){
   .centro{
-    transform: translate(0px);
+    transform: translate(-95px);
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  .centro{
+    transform: translate(-20px);
   }
 }
