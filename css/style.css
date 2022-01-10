@@ -909,6 +909,10 @@ textarea.input {
   min-height: 120px;
 }
 
+.date-event{
+  padding-top:35px;
+}
+
 .event .event-time {
   font-size: 14px;
 }
@@ -1257,6 +1261,11 @@ textarea.input {
   }
 }
   
+@media only screen and (max-width: 992px) {
+.date-event{
+  padding-top:18px;
+}
+}
 @media only screen and (max-width: 992px) {
   .contact-social {
     text-align: center;
