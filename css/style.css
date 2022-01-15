@@ -275,6 +275,16 @@ textarea.input {
 	LOGO
 ===========================================================*/
 
+.prize-amt{
+  color:white!important;
+}
+
+.prize-no{
+  margin-bottom: 25px!important;
+  text-decoration: underline;
+  color:#c71239;
+}
+
 .navbar-brand {
   padding: 0;
   margin: 15px 0px;
@@ -1239,6 +1249,13 @@ textarea.input {
   }
 }
   
+@media only screen and (max-width: 768px) {
+  #digitalocean{
+    padding:10%;
+  }
+  
+}
+
 @media (min-width: 768px) and (max-width: 992px){
   .navbar-nav>li {
     float: none;
