@@ -275,16 +275,6 @@ textarea.input {
 	LOGO
 ===========================================================*/
 
-.prize-amt{
-  color:white!important;
-}
-
-.prize-no{
-  margin-bottom: 25px!important;
-  text-decoration: underline;
-  color:#c71239;
-}
-
 .navbar-brand {
   padding: 0;
   margin: 15px 0px;
@@ -619,6 +609,88 @@ textarea.input {
 
 #galery-owl.owl-theme .owl-next {
   right: 15px;
+}
+
+/*=========================================================
+	PRIZES
+===========================================================*/
+
+.prize-amt{
+  color:white!important;
+}
+
+.prize-no{
+  margin-bottom: 25px!important;
+  text-decoration: underline;
+  color:#c71239;
+}
+
+.jiit-only-img{
+  margin-top: 25%;
+}
+
+@media only screen and (min-width:1200px){
+  .prize-img{
+    margin-top: 14%;
+  }
+  
+  #jiit-only{
+    margin-left:36%;
+  }
+
+  #girls-only{
+    margin-right:36%;
+  }
+}
+
+@media only screen and (min-width:992px) and (max-width:1200px){
+  .prize-img{
+    margin-top: 17%;
+  }
+
+  #jiit-only{
+    margin-left:20%;
+  }
+  
+  #girls-only{
+    margin-right:20%;
+  }
+} 
+
+@media only screen and (min-width:767px) and (max-width:992px){
+  .prize-img{
+    margin-top: 22.5%;
+  }
+  
+  .jiit-only-img{
+    margin-top: 34%;
+  }
+  
+  #jiit-only{
+    margin-left:22%;
+  }
+  
+  #girls-only{
+    margin-right:22%;
+  }
+}
+
+@media only screen and (max-width:767px){
+  #winner{
+    margin-bottom:15%;
+  }
+
+  #runner-up{
+    margin-bottom:15%;
+  }
+  
+  .jiit-only-img{
+    margin-top: 10%;
+  }
+
+  .oss-track{
+    margin-top: 10%;
+  }
 }
 
 /*=========================================================
