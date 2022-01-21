@@ -1,3 +1,5 @@
+
+
 (function($) {
   "use strict";
 
@@ -104,3 +106,17 @@ else {
  buttontext.innerHTML = "Show Less";
 }
 }
+var ctfclick=0;
+var logo=document.getElementById("osdhack");
+logo.addEventListener("click",function ctfeasteregg(){
+
+ctfclick++;
+if(ctfclick==1){
+alert("You are getting closer to the secret🤫")
+}
+if(ctfclick>2)
+{
+  logo.href="https://osdh-ctf.netlify.app/"
+} 
+}
+)
