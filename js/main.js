@@ -117,6 +117,7 @@ alert("You are getting closer to the secret🤫")
 if(ctfclick==3)
 {
   logo.href="https://ctf.osdhackjiit.com/"
+  logo.target = "_blank"
 } 
 }
 )
