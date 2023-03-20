@@ -1733,12 +1733,20 @@ https://mkrtchyan.ga
   transform: translateY(-50%);
   z-index: 2;
   width: 100%;
+<<<<<<< HEAD
+  height: 60%;
+=======
   height: 65%;
+>>>>>>> 17deddfd082a4e1295f27ebd4d10f6eea1b8608a
   transition: .5s;
 }
 
 .container .card:hover .imgBx {
+<<<<<<< HEAD
+  top: 0%;
+=======
   top: 10%;
+>>>>>>> 17deddfd082a4e1295f27ebd4d10f6eea1b8608a
   transform: translateY(-25%);
   /* bug  */
 }
@@ -1754,18 +1762,29 @@ https://mkrtchyan.ga
 
 .container .card .contentBx {
   position: absolute;
+<<<<<<< HEAD
+  bottom: 0;
+=======
   bottom: -10px;
+>>>>>>> 17deddfd082a4e1295f27ebd4d10f6eea1b8608a
   width: 100%;
   height: 100px;
   text-align: center;
   transition: 1s;
   z-index: 90;
+<<<<<<< HEAD
+}
+
+.container .card:hover .contentBx {
+  height: 210px;
+=======
   transform: translateY(20%);
 }
 
 .container .card:hover .contentBx {
   bottom: 55px;
   transform: translateY(-3%);
+>>>>>>> 17deddfd082a4e1295f27ebd4d10f6eea1b8608a
 }
 
 .container .card .contentBx h2 {
@@ -1884,7 +1903,7 @@ https://mkrtchyan.ga
   }
 
   .row div {
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
   }
 }
