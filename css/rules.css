@@ -47,13 +47,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #c71239;
+    background: rgba(255,255,255);
     border-radius: 5px;
+    /* color: red; */
   
   }
   
   .faq-label-text {
-    color: white;
+    color: black;
   
   }
   
