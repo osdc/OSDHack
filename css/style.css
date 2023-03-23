@@ -50,11 +50,12 @@ body {
   /* color: #fff; */
   color: #f6f7f7;
   /* background-color: #070920; */
-  background-image: url(/img/bg.jpg);
+  background-image: url(/img/bg-23.jpg);
   overflow-x: hidden;
   background-attachment: fixed;
-  background-size: 100%;
-  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 ::selection {
@@ -1884,7 +1885,7 @@ https://mkrtchyan.ga
   }
 
   .row div {
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
   }
 }
