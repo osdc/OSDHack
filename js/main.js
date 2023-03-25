@@ -106,18 +106,4 @@ else {
  buttontext.innerHTML = "Show Less";
 }
 }
-var ctfclick=0;
-var logo=document.getElementById("osdhack");
-logo.addEventListener("click",function ctfeasteregg(){
 
-ctfclick++;
-if(ctfclick==2){
-alert("You are getting closer to the secret🤫")
-}
-if(ctfclick==3)
-{
-  logo.href="https://ctf.osdhackjiit.com/"
-  logo.target = "_blank"
-} 
-}
-)
